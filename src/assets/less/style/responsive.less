@@ -1,0 +1,100 @@
+@media only screen and (max-width : @screen-md-max) {
+    .member-ship {
+        .member-block-inner {
+            max-height: 214px;
+            position: relative;
+            overflow: hidden;
+            .member-pic {
+                &:before {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+            }
+            .member-info {
+                opacity: 1;
+            }
+        }
+    }
+}
+@media only screen and (min-width : @screen-lg-min) {
+    .member-block {
+        width: 20%;
+    }
+}
+@media only screen and (max-width : @screen-xs-max) {
+    .download-store {
+        &.download-question {
+            .download-question-text {
+                width: 100%;
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .breadcrumb-bar {
+        display: none;
+    }
+    .article-wrap {
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width : @screen-sm-max) {
+    .section-title,
+    .section-marketing-field .section-title,
+    .section-banner .section-title {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 30px;
+    }
+    .marketing-field {
+        max-width: 360px;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+        .form-control,
+        .input-group-btn,
+        .btn {
+            width: 100%;
+            height: 48px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+            &:first-child {
+                border-bottom-right-radius: @border-radius;
+                border-top-right-radius: @border-radius;
+            }
+        }
+        .input-group-btn {
+            display: table;
+            .btn {
+                margin-left: 0;
+                &:last-child {
+                    border-bottom-left-radius: @border-radius;
+                    border-top-left-radius: @border-radius;
+                }
+            }
+        }
+    }
+    .info-block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-sidebar {
+        display: none;
+    }
+}
+@media only screen and (min-width : @screen-sm-min) {
+    .section-tight {
+        .section-heading {
+            margin-top: 0;
+            text-align: left;
+        }
+        .section-subhead {
+            font-size: 16px;
+        }
+        .container {
+            .content-align-center;
+        }
+    }
+}

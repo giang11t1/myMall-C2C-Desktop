@@ -1,0 +1,52 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+.form-label {
+    margin-bottom: 5px;
+}
+.form-control {
+    height: 36px;
+    padding: 7px 10px;
+    border-color: @input-border-color;
+    .box-shadow(none);
+    &:focus {
+        outline: none;
+        border-color: @input-border-color;
+        .box-shadow(none);
+    }
+}
+.form-control-group {
+    > * {
+        display: block;
+        float: left;
+    }
+}
+.important {
+    color: @primary-color;
+}
+.checkbox input[type=checkbox] {
+    display: none;
+}
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+}
+.checkbox input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    background-color: #2bc5f8;
+    border: 1px solid #2bc5f8;
+}

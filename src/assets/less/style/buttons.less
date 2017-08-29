@@ -1,0 +1,52 @@
+.btn {
+    height: 36px;
+    padding: 7px 20px;
+    font-weight: 600;
+    &.btn-lg {
+        height: 52px;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.btn-primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+    border-radius: @border-radius;
+    &:hover {
+        background-color: @btn-bg-hover;
+        border-color: @btn-bg-hover;
+    }
+    &:focus,
+    &:active:focus,
+    &:active {
+        outline: none;
+        background-color: @primary-color;
+        border-color: @primary-color;
+    }
+}
+a {
+    &.btn-lg {
+        line-height: 33px;
+    }
+}
+.btn-search {
+    min-width: 70px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 34px 34px;
+    border-color: transparent;
+    font-size: 22px;
+    padding: 0 10px;
+    background: @primary-color;
+    color: #fff;
+    border-radius: 0;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: @primary-color;
+        border-color: transparent;
+        color: #fff;
+    }
+}

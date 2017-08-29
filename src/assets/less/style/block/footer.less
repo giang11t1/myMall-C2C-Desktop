@@ -1,0 +1,115 @@
+footer {
+	width: 100%;
+    height: 372px;
+    float: left;
+    color: @text-color-2;
+    background: #fff;
+    padding: 20px 0;
+    border-top: @border;
+    .f-block-4{
+        padding-right: 0;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    .footer-row-1 {
+        .f-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .list-group {
+            li {
+                line-height: 25px;
+            }
+        }
+        .f-block-1 {
+            .f-title {
+                font-weight: bold;
+                margin: 10px 0;
+            }
+            .f-bct {
+                .nt {
+                    float: right;
+                }
+            }
+        }
+        .f-block-2 {
+            .f-phone {
+                a {
+                    color: @text-color-3;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: @primary-color;
+                        display: block;
+                    }
+                }
+            }
+            .f-introduce {
+                a {
+                    color: @primary-color;
+                }
+            }
+        }
+        .f-block-5 {
+            li {
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .footer-row-2 {
+        text-align: center;
+        color: @text-color-3;
+        font-size: 12px;
+    }
+}
+.footer-fixed {
+    width: 100%;
+    background-color: #101010;
+}
+.back-top-btn {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 80px;
+    z-index: 9;
+    min-width: auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: @secondary-color;
+    line-height: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.4;
+    &:hover {
+        background-color: @secondary-color;
+    }
+    &:visited,
+    &:focus {
+        background-color: @secondary-color;
+        color: #fff;
+    }
+    span {
+        font-size: 30px;
+        position: relative;
+        top: 2px;
+
+    }
+}
+@media only screen and (max-width : @screen-xs-max) {
+    footer {
+        height: 968px;
+    }
+}
+@media only screen and (max-width : @screen-sm-max) {
+    footer {
+        height: 596px;
+    }
+}
+

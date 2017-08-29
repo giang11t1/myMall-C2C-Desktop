@@ -1,0 +1,173 @@
+<aside class="main-sidebar">
+    <ul class="sidebar-menu">
+        <li class="{% if current_page == 'index' %}active{% endif %}">
+            <a href="index.html">
+                <span class="icon dashboard-icon"></span>
+                <span>Quản lý chung</span>
+            </a>
+        </li>
+        <li class="treeview {% if current_page == 'chat-comment' or current_page == 'chat-comment-zalo'  or current_page == 'hide-comment' or current_page == 'auto-reply' %}active{% endif %}">
+            <a href="#">
+                <span class="icon chat-icon"></span>
+                <span>Chat & comment</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-right pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="treeview {% if current_page == 'chat-comment' %}active{% endif %}">
+                    <a href="chat-comment.html">
+                        <span>Facebook</span>
+                        <span class="label secondary-label">2</span>
+                    </a>
+                </li>
+                <li class="treeview {% if current_page == 'chat-comment-zalo' %}active{% endif %}">
+                    <a href="#">
+                        <span>Zalo</span>
+                        <span class="label secondary-label">0</span>
+                    </a>
+                </li>
+                <li class="treeview {% if current_page == 'hide-comment' %}active{% endif %}">
+                    <a href="#">
+                        <span>Ẩn comment</span>
+                    </a>
+                </li>
+                <li class="treeview {% if current_page == 'auto-reply' %}active{% endif %}">
+                    <a href="#">
+                        <span>Trả lời tự động</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview {% if current_page == 'order-statistic' or current_page == 'order-list-view' or current_page == 'order-create-multi' %}active{% endif %}">
+            <a href="#">
+                <span class="icon order-icon"></span>
+                <span>Đơn hàng</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-right pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="{% if current_page == 'order-statistic' %}active{% endif %}">
+                    <a href="#">
+                        <span>Thống kê đơn hàng</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'order-list-view' %}active{% endif %}">
+                    <a href="#">
+                        <span>Danh sách đơn hàng</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'order-create-multi' %}active{% endif %}">
+                    <a href="#">
+                        <span>Tạo đơn hàng nhanh</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview {% if current_page == 'product-list-view' or current_page == 'product-create' or current_page == 'category-list-view' or current_page == 'category-create' or current_page == 'product-import-file' or current_page == 'product-export-file' or current_page == 'product-advanced' %}active{% endif %}">
+            <a href="#">
+                <span class="icon product-icon"></span>
+                <span>Sản phẩm</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-right pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="{% if current_page == 'product-list-view' or current_page == 'product-create' %}active{% endif %}">
+                    <a href="#">
+                        <span>Sản phẩm</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'category-list-view' or current_page == 'category-create' %}active{% endif %}">
+                    <a href="#">
+                        <span>Danh mục sản phẩm</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'product-import-file' %}active{% endif %}">
+                    <a href="#">
+                        <span>Nhập sản phẩm</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'product-export-file' %}active{% endif %}">
+                    <a href="#">
+                        <span>Xuất sản phẩm</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'product-advanced' %}active{% endif %}">
+                    <a href="#">
+                        <span>Cài đặt sản phẩm nâng cao</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview {% if current_page == 'customer-list-view' or current_page == 'group-customer-list' %}active{% endif %}">
+            <a href="#">
+                <span class="icon customer-icon"></span>
+                <span>Khách hàng</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-right pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="{% if current_page == 'customer-list-view' %}active{% endif %}">
+                    <a href="#">
+                        <span>Danh sách khách hàng</span>
+                    </a>
+                </li>
+                <li class="{% if current_page == 'group-customer-list' %}active{% endif %}">
+                    <a href="#">
+                        <span>Nhóm khách hàng</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="{% if current_page == 'promotion-coupon-list-view' or current_page == 'promotion-order-list-view' or current_page == 'promotion-product-list-view' or current_page == 'promotion-coupon-create' or current_page == 'promotion-order-create' or current_page == 'promotion-product-create'%}active{% endif %}">
+            <a href="#">
+                <span class="icon promotion-icon"></span>
+                <span>Khuyến mãi</span>
+            </a>
+        </li>
+        <li class="{% if current_page == 'report' %}active{% endif %}">
+            <a href="#">
+                <span class="icon report-icon"></span>
+                <span>Báo cáo</span>
+            </a>
+        </li>
+        <li class="{% if current_page == 'sales-chanel' %}active{% endif %}">
+            <a href="#">
+                <span class="icon sale-chanel-icon"></span>
+                <span>Kênh bán hàng</span>
+            </a>
+        </li>
+        <li class="{% if current_page == 'cauhinh' %}active{% endif %}">
+            <a href="#">
+                <span class="icon setting-icon"></span>
+                <span>Cấu hình</span>
+            </a>
+        </li>
+    </ul>
+    <div class="box-check">
+        <div class="heading">
+            <h4><a title="" data-toggle="collapse" href="#content1" aria-expanded="false" aria-controls="collapseExample"><span class="text">Chức năng</span><span class="fa fa-angle-up"></span></a></h4>
+        </div>
+        <div id="content1" class="content collapse in">
+            <div class="checkbox">
+                <input id="check1" type="checkbox" name="check" value="check1">
+                <label for="check1">Dán <span class="number">(78)</span></label>
+            </div>
+            <div class="checkbox">
+                <input id="check2" type="checkbox" name="check" value="check1">
+                <label for="check2">Quần <span class="number">(178) </span></label>
+            </div>
+            <div class="checkbox">
+                <input id="check3" type="checkbox" name="check" value="check1">
+                <label for="check3">Ban ngày<span class="number">(18)</span></label>
+            </div>
+            <div class="checkbox">
+                <input id="check4" type="checkbox" name="check" value="check1">
+                <label for="check4">Ban đêm<span class="number">(158) </span></label>
+            </div>
+        </div>
+    </div>
+</aside>
