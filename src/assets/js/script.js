@@ -71,9 +71,17 @@ $(document).ready(function() {
         zoom_area_width: 500,
         autoplay_interval :3000,
         small_thumbs : 5,
-        autoplay : true
+        autoplay : true,
+        not_set_small_thumb: true 
     });
-
+// show option when click in breadcrumb
+    function callText(){
+        $(".breadcrumb .list-cate li a").click(function(){
+            var text = $(this).text();
+            $(".showName").text(text);
+        });
+    }
+    callText();
 
     $(".ctv-contact-btn").click(function() {
         $('html,body').animate({scrollTop: ($('.'+'section-ctv-contact').offset().top - 80)},'slow');
@@ -100,7 +108,6 @@ $(document).ready(function() {
         setSizes('.col-product .wrap-img', cont_size_1);
         setSizes('.col-product .wrap-img', cont_size_1);
     });
-
 });
 // choose color detail
 $(".list-color li").click(function(){
@@ -141,7 +148,7 @@ $(document).on("click", function(e){
         $(".cate1 .scrollbar").hide();
     }
 });
-
+// show time
 $(function(){    
     var ts = new Date(2012, 0, 1),
         newYear = true;

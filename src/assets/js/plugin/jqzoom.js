@@ -28,6 +28,7 @@
 			autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
 			keyboard: true,
 			right_to_left: false,
+			not_set_small_thumb: false
 		}
 
 		if(options){
@@ -35,6 +36,8 @@
 		}
 
 		var $ul = $(this);
+		var $small_thumbs_number =  $(this).find('li').length;
+		
 		if($ul.is("ul") && $ul.children("li").length && $ul.find(".bzoom_big_image").length){
 
 			$ul.addClass('bzoom clearfix').show();
@@ -113,23 +116,26 @@
 			if(!$(".bzoom_small_thumbs").length){
 				var top = _option.thumb_image_height+10,
 					width = _option.thumb_image_width,
-					smwidth = (_option.thumb_image_width / _option.small_thumbs) - 10,
+					smwidth = (_option.thumb_image_width / _option.small_thumbs) - 12,
 					smheight = smwidth / scxy,
 					ulwidth = 
 					smurl = '',
 					html = '';
 
+				if(_option.not_set_small_thumb) {
+					_option.small_thumbs = $small_thumbs_number;
+				}
 				for(var i=0; i<_option.small_thumbs; i++){
 					smurl = $li.eq(i).find('.bzoom_thumb_image').attr("src");
 
 					if(i==0){
-						html += '<li class="bzoom_smallthumb_active"><img src="'+smurl+'" alt="small" style="width:'+smwidth+'px; height:'+smheight+'px;" /></li>';
+						html += '<li class="bzoom_smallthumb_active"><img src="'+smurl+'" alt="" style="width:'+smwidth+'px; height:'+smheight+'px;" /></li>';
 					}else{
-						html += '<li style="opacity:0.4;"><img src="'+smurl+'" alt="small" style="width:'+smwidth+'px; height:'+smheight+'px;" /></li>';
+						html += '<li style="opacity:0.4;"><img src="'+smurl+'" alt="" style="width:'+smwidth+'px; height:'+smheight+'px;" /></li>';
 					}
 				}
 
-				$small = $('<li class="bzoom_small_thumbs" style="top:'+top+'px; width:'+width+'px;"><ul class="clearfix" style="width: 570px;">'+html+'</ul></li>');
+				$small = $('<li class="bzoom_small_thumbs" style="top:'+top+'px; width:'+width+'px;"><ul class="clearfix" style="max-width: 570px; width: auto;">'+html+'</ul></li>');
 				$ul.append($small);
 
 				$small.delegate("li", "click", function(event){
@@ -159,6 +165,7 @@
 			$bzoom_zoom_area.find('div').css({width:_option.zoom_area_width, height:_option.zoom_area_height});
 
 			$li.add($bzoom_magnifier).mousemove(function(event){
+
 				var xpos = event.pageX - $ul.offset().left,
 					ypos = event.pageY - $ul.offset().top,
 					magwidth = _option.thumb_image_width*scalex,
@@ -169,14 +176,14 @@
 					bigposy = 0;
 
 				if(xpos < _option.thumb_image_width/2){
-					magx = xpos > magwidth/2 ? xpos-magwidth/2 : 0;
+					magx = xpos > magwidth/2? xpos-magwidth/2 : 0;
 				}else{
 					magx = xpos+magwidth/2 > _option.thumb_image_width ? _option.thumb_image_width-magwidth : xpos-magwidth/2;
 				}
 				if(ypos < _option.thumb_image_height/2){
 					magy = ypos > magheight/2 ? ypos-magheight/2 : 0;
 				}else{
-					magy = ypos+magheight/2 > _option.thumb_image_height ? _option.thumb_image_height-magheight : ypos-magheight/2;
+					magy = ypos+magheight/2 > _option.thumb_image_height ? _option.thumb_image_height-magheight+88 : ypos-magheight/2;
 				}
 
 				bigposx = magx / scalex;
