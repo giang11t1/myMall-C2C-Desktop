@@ -179,6 +179,19 @@ $(".MenuSlide .swiper-slide").click(function(){
     $(".MenuSlide .swiper-slide").removeClass("active");
     $(this).addClass("active");
 });
+// resize select option
+$('#resizing_select').change(function(){
+    $("#width_tmp_option").html($('#resizing_select option:selected').text());
+    $(this).width($("#width_tmp_select").width());  
+});
+$('#resizing_select1').change(function(){
+    $("#width_tmp_option1").html($('#resizing_select1 option:selected').text());
+    $(this).width($("#width_tmp_select1").width());  
+});
+$('#resizing_select2').change(function(){
+    $("#width_tmp_option2").html($('#resizing_select2 option:selected').text());
+    $(this).width($("#width_tmp_select2").width());  
+});
 // show time
 $(function(){    
     var ts = new Date(2012, 0, 1),

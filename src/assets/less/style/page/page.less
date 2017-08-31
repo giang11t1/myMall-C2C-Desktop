@@ -1200,19 +1200,37 @@ div.tab button.active {
                 font-size: 14px;
             }
         }
-        .other-price, .color-choose, .color-choose {
-            width: 20%;
+        .color-choose {
+            margin-right: 15px;
+        }
+        .other-price, .color-choose, .size-choose {
             display: inline-block;
-            /*float: left;*/
             font-size: 14px;
-            .wrap_select {
-                width: 45%;
-                margin-left: 5px;
-                .form-control {
-                    height: 32px;
-                    padding: 0px 10px;
+            label {
+                float: left;
+                margin-right: 10px;
+                position: relative;
+                top: 5px;
+            }
+            .form-control {
+                height: 30px;
+                padding: 0px 10px;
+                option {
+                    line-height: 24px;
                 }
             }
+            #resizing_select {
+                width: 115px;
+            }
+            #resizing_select1,#resizing_select2 {
+                width: 70px;
+            } 
+            #width_tmp_select,
+            #width_tmp_select1,
+            #width_tmp_select2{
+                display : none;
+            } 
+
         }
     }
 }

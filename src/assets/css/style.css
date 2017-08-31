@@ -5613,25 +5613,57 @@ div.tab button.active {
   margin-right: 15px;
   font-size: 14px;
 }
+.section-menu .list-filter .color-choose {
+  margin-right: 15px;
+}
 .section-menu .list-filter .other-price,
 .section-menu .list-filter .color-choose,
-.section-menu .list-filter .color-choose {
-  width: 20%;
+.section-menu .list-filter .size-choose {
   display: inline-block;
-  /*float: left;*/
   font-size: 14px;
 }
-.section-menu .list-filter .other-price .wrap_select,
-.section-menu .list-filter .color-choose .wrap_select,
-.section-menu .list-filter .color-choose .wrap_select {
-  width: 45%;
-  margin-left: 5px;
+.section-menu .list-filter .other-price label,
+.section-menu .list-filter .color-choose label,
+.section-menu .list-filter .size-choose label {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
 }
-.section-menu .list-filter .other-price .wrap_select .form-control,
-.section-menu .list-filter .color-choose .wrap_select .form-control,
-.section-menu .list-filter .color-choose .wrap_select .form-control {
-  height: 32px;
+.section-menu .list-filter .other-price .form-control,
+.section-menu .list-filter .color-choose .form-control,
+.section-menu .list-filter .size-choose .form-control {
+  height: 30px;
   padding: 0px 10px;
+}
+.section-menu .list-filter .other-price .form-control option,
+.section-menu .list-filter .color-choose .form-control option,
+.section-menu .list-filter .size-choose .form-control option {
+  line-height: 24px;
+}
+.section-menu .list-filter .other-price #resizing_select,
+.section-menu .list-filter .color-choose #resizing_select,
+.section-menu .list-filter .size-choose #resizing_select {
+  width: 115px;
+}
+.section-menu .list-filter .other-price #resizing_select1,
+.section-menu .list-filter .color-choose #resizing_select1,
+.section-menu .list-filter .size-choose #resizing_select1,
+.section-menu .list-filter .other-price #resizing_select2,
+.section-menu .list-filter .color-choose #resizing_select2,
+.section-menu .list-filter .size-choose #resizing_select2 {
+  width: 70px;
+}
+.section-menu .list-filter .other-price #width_tmp_select,
+.section-menu .list-filter .color-choose #width_tmp_select,
+.section-menu .list-filter .size-choose #width_tmp_select,
+.section-menu .list-filter .other-price #width_tmp_select1,
+.section-menu .list-filter .color-choose #width_tmp_select1,
+.section-menu .list-filter .size-choose #width_tmp_select1,
+.section-menu .list-filter .other-price #width_tmp_select2,
+.section-menu .list-filter .color-choose #width_tmp_select2,
+.section-menu .list-filter .size-choose #width_tmp_select2 {
+  display: none;
 }
 @media only screen and (max-width: 1199px) {
   .member-ship .member-block-inner {

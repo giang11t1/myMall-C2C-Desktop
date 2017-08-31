@@ -1,5 +1,6 @@
 {% set current_page = 'features' %} {% extends "layout/_layout.html" %} {% block page-container %}
 <main>
+    {% include "block/_arrow-next-pre.html" %}
     <section class="section container section-category color-4 categoryPage">
         {% include "block/_category.html" %}
     </section>
@@ -22,6 +23,7 @@
             </div>
         </div>
     </div>
+    <div></div>
     <section class="section-menu">
         <div class="section-inner">
             <div class="container">                
@@ -115,11 +117,11 @@
                             </div>
                         </div>
                     </div> 
-                    <hr>                                      
                     <div class="next-pre">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                    </div>                         
+                    </div>  
+                    <hr>                                 
                 </div>
                 <div class="list-filter">
                     <ul class="price-level">
@@ -131,38 +133,40 @@
                     </ul>
                     <div class="other-price">
                         <label>Mức giá khác:</label>
-                        <div class="wrap_select">
-                            <select class="form-control">
-                                <option>250k-300k</option>
-                                <option>300k-500k</option>
-                                <option>500k-1000k</option>
-                            </select>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
+                        <select class="form-control" id="resizing_select">
+                            <option>250k-300k</option>
+                            <option>300k-500k</option>
+                            <option>500k-1000k</option>
+                        </select>
+                        <select id="width_tmp_select">
+                            <option id="width_tmp_option"></option>
+                        </select>
                     </div>
-                    <div class="color-choose">
-                        <label>Màu sắc:</label>
-                        <div class="wrap_select">
-                            <select class="form-control">
+                    <div class="pull-right">
+                        <div class="color-choose">
+                            <label>Màu sắc:</label>
+                            <select class="form-control" id="resizing_select1">
                                 <option>Da</option>
                                 <option>Đỏ</option>
                                 <option>Cam</option>
                             </select>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                    </div>  
-                    <div class="color-choose">
-                        <label>Kích thước:</label>
-                        <div class="wrap_select">
-                            <select class="form-control">
+                            <select id="width_tmp_select1">
+                                <option id="width_tmp_option1"></option>
+                            </select>
+                        </div>  
+                        <div class="size-choose">
+                            <label>Kích thước:</label>
+                            <select class="form-control" id="resizing_select2">
                                 <option>S</option>
                                 <option>M</option>
                                 <option>L</option>
                                 <option>XL</option>
                             </select>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                    </div>                    
+                            <select id="width_tmp_select2">
+                                <option id="width_tmp_option2"></option>
+                            </select>
+                        </div>  
+                    </div>                                      
                 </div>
             </div>
         </div>
