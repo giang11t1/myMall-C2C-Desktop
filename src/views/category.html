@@ -1,11 +1,172 @@
 {% set current_page = 'features' %} {% extends "layout/_layout.html" %} {% block page-container %}
 <main>
-    <section class="section container section-category color-4">
+    <section class="section container section-category color-4 categoryPage">
         {% include "block/_category.html" %}
     </section>
     <div class="block-menu">
-        
+        <div class="section-inner">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="container">
+                        <div class="inner-breadcrumb">
+                            <ul>
+                                <li>
+                                    <a href="./"><b>Trang chủ</b></a>
+                                </li>
+                                <li><a href="#">Thời trang nam</a></li>
+                                <li><a href="#">Giày dép</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <section class="section-menu">
+        <div class="section-inner">
+            <div class="container">                
+                <div class="container swiper-wrapper">
+                    <div class="swiper-container MenuSlide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Giày dép</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Áo lỡ</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Áo phông phông</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Áo nữ</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Phụ kiện</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Váy suông</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Áo thêu</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Thanh lý</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">The face</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Sexy shop</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Phô mai</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Phô mai</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Phô mai</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Phô mai</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Sexy shop shop</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Sexy shop</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0);" title="" target="_blank" class="link-img">
+                                    <p class="text">Sexy shop</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <hr>                                      
+                    <div class="next-pre">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>                         
+                </div>
+                <div class="list-filter">
+                    <ul class="price-level">
+                        <li><b>Mức giá:</b></li>
+                        <li><a href="javascript:void(0);">Dưới 100k</a></li>
+                        <li><a href="javascript:void(0);">100k-150k</a></li>
+                        <li><a href="javascript:void(0);">150k-200k</a></li>
+                        <li><a href="javascript:void(0);">200k-250k</a></li>
+                    </ul>
+                    <div class="other-price">
+                        <label>Mức giá khác:</label>
+                        <div class="wrap_select">
+                            <select class="form-control">
+                                <option>250k-300k</option>
+                                <option>300k-500k</option>
+                                <option>500k-1000k</option>
+                            </select>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="color-choose">
+                        <label>Màu sắc:</label>
+                        <div class="wrap_select">
+                            <select class="form-control">
+                                <option>Da</option>
+                                <option>Đỏ</option>
+                                <option>Cam</option>
+                            </select>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </div>  
+                    <div class="color-choose">
+                        <label>Kích thước:</label>
+                        <div class="wrap_select">
+                            <select class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section container section-padding">
         {% include "block/_recommend.html" %}
     </section>

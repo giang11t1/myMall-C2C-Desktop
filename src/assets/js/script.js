@@ -1,5 +1,21 @@
 var cont_size_1 = 1; //300*400
 
+var Site = (function($, window, undefined) {
+  var privateVar = 1;
+
+  function privateMethod1() {
+    // todo
+  }
+  return {
+    publicVar: 1,
+    publicObj: {
+      var1: 1,
+      var2: 2
+    },
+    publicMethod1: privateMethod1
+  };
+
+})(jQuery, window);
 
 $(document).ready(function() {
 
@@ -65,15 +81,25 @@ $(document).ready(function() {
         centeredSlides: false,
         spaceBetween: 0,
     });
-    
 
+    //menu
+    var swiper = new Swiper('.MenuSlide', {
+        nextButton: '.next-pre .swiper-button-next',
+        prevButton: '.next-pre .swiper-button-prev',
+        slidesPerView:13,
+        centeredSlides: false,
+        spaceBetween: 0,
+    });
+    // ===
     $("#bzoom").zoom({
         zoom_area_width: 500,
         autoplay_interval :3000,
         small_thumbs : 5,
         autoplay : true,
-        not_set_small_thumb: true 
+        not_set_small_thumb: true,
+        add_ypos: 88
     });
+
 // show option when click in breadcrumb
     function callText(){
         $(".breadcrumb .list-cate li a").click(function(){
@@ -148,6 +174,11 @@ $(document).on("click", function(e){
         $(".cate1 .scrollbar").hide();
     }
 });
+// active menu category
+$(".MenuSlide .swiper-slide").click(function(){
+    $(".MenuSlide .swiper-slide").removeClass("active");
+    $(this).addClass("active");
+});
 // show time
 $(function(){    
     var ts = new Date(2012, 0, 1),
@@ -209,3 +240,20 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+// set menu category
+var hoverAndClick = function() {
+  var valueDataId = $(this).attr("data-id");
+    $(".menu-content .sub-content").removeClass("active");
+    $(".menu-content .sub-content.sub_"+valueDataId).addClass("active");
+    $("header .item  a").css("border-bottom","0");
+    $("header .wrap-slider").css("border-bottom","0");
+    $(this).css("border-bottom","3px solid #2bc5f8");
+} ;
+  Site.publicMethod1();
+
+$("header .item  a").hover( hoverAndClick ).click( hoverAndClick ).focus( hoverAndClick) ;
+$("#collapseExample > .container").mouseleave(function(){
+    $(".menu-content .sub-content").removeClass("active");
+    $("header .item  a").css("border-bottom","0");
+    $("header .wrap-slider").css("border-bottom","2px solid #e1e1e1");
+});

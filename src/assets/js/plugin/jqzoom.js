@@ -28,7 +28,8 @@
 			autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
 			keyboard: true,
 			right_to_left: false,
-			not_set_small_thumb: false
+			not_set_small_thumb: false,
+			add_ypos: 0
 		}
 
 		if(options){
@@ -183,7 +184,7 @@
 				if(ypos < _option.thumb_image_height/2){
 					magy = ypos > magheight/2 ? ypos-magheight/2 : 0;
 				}else{
-					magy = ypos+magheight/2 > _option.thumb_image_height ? _option.thumb_image_height-magheight+88 : ypos-magheight/2;
+					magy = ypos+magheight/2 > _option.thumb_image_height ? _option.thumb_image_height-magheight+_option.add_ypos : ypos-magheight/2;
 				}
 
 				bigposx = magx / scalex;
