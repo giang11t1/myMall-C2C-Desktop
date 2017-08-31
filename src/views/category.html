@@ -1,4 +1,6 @@
-{% set current_page = 'features' %} {% extends "layout/_layout.html" %} {% block page-container %}
+{% set current_page = 'features' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
 <main>
     {% include "block/_arrow-next-pre.html" %}
     <section class="section container section-category color-4 categoryPage">
@@ -23,7 +25,6 @@
             </div>
         </div>
     </div>
-    <div></div>
     <section class="section-menu">
         <div class="section-inner">
             <div class="container">                
@@ -132,8 +133,9 @@
                         <li><a href="javascript:void(0);">200k-250k</a></li>
                     </ul>
                     <div class="other-price">
-                        <label>Mức giá khác:</label>
+                        <!-- <label>Mức giá khác:</label> -->
                         <select class="form-control" id="resizing_select">
+                            <option>Mức giá khác</option>
                             <option>250k-300k</option>
                             <option>300k-500k</option>
                             <option>500k-1000k</option>

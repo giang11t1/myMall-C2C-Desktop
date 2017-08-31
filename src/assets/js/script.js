@@ -179,6 +179,11 @@ $(".MenuSlide .swiper-slide").click(function(){
     $(".MenuSlide .swiper-slide").removeClass("active");
     $(this).addClass("active");
 });
+// active pagination
+$(".wrap_pagination ul li a").click(function(){
+    $(".wrap_pagination ul li a").removeClass("active");
+    $(this).addClass("active");
+});
 // resize select option
 $('#resizing_select').change(function(){
     $("#width_tmp_option").html($('#resizing_select option:selected').text());
