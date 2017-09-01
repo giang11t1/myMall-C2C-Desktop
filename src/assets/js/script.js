@@ -197,6 +197,18 @@ $('#resizing_select2').change(function(){
     $("#width_tmp_option2").html($('#resizing_select2 option:selected').text());
     $(this).width($("#width_tmp_select2").width());  
 });
+// fix position menu cate
+if($('#menu_fixed').length > 0){
+    var eTop = $('#menu_fixed').offset().top; //get the offset top of the element
+    // alert(eTop);
+      $(window).scroll(function() { //when window is scrolled
+        if ($(this).scrollTop() > (eTop)) {
+            $('#fixed-block-menu').addClass("position-menu");
+        } else {
+            $('#fixed-block-menu').removeClass("position-menu");
+        }
+      });
+}
 // show time
 $(function(){    
     var ts = new Date(2012, 0, 1),

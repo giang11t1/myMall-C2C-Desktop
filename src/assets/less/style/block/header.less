@@ -5,11 +5,11 @@ header {
     position: relative;
     z-index: 99;
     .header-fixed {
-        position: fixed;
+        /*position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 99;
+        z-index: 99;*/
         .first-row {
             height: 70px;
             padding: 15px 0;
@@ -213,7 +213,7 @@ header {
 .header-top {
     font-size: 14px;
     padding: 10px 0;
-    background: #fff;
+    background: #f2f7f2;
     .head-line {
         color: @secondary-color;
         @media only screen and (max-width: @screen-lg-min) {
@@ -223,10 +223,11 @@ header {
     .pull-right {
         a {
             margin-left: 20px;
+            color: @primary-color;
             &:hover,
             &:focus,
             &:active {
-                color: @primary-color;
+                color: #ffae45;
             }
         }
     }
