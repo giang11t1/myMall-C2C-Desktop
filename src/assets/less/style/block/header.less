@@ -382,7 +382,7 @@ header {
         }
     }
 }
-//
+
 #show-result {
   display: none;
   a {
@@ -477,4 +477,147 @@ header {
       text-decoration: line-through;
     }
 }
-
+/*header mobile*/
+.container-header {min-height: 58px; background: #fff; width: 100%; z-index: 999; box-shadow: 0px 2px 1px #e7e7e7;-webkit-box-shadow: 0px 1px 1px #e7e7e7;-moz-box-shadow: 0px 1px 1px #e7e7e7; margin-bottom: 4px;border-top: 5px solid #2bc5f8;}
+.container-header .btn-cat {display: block; line-height: 48px; width: 30px;}
+.container-header.affix {opacity:1; transition: all 0.3s ease-in-out 0s;}
+.container-header .title-page {padding-left: 5px; float: left;   margin: 0 4% 0 25%;}
+.container-header a.logo {display: block; width: 100%; line-height: 46px; text-align: center;}
+.container-header a.logo img {max-width: 100%; max-height: 80%; vertical-align: middle}
+button.btn-search-home {margin-top: 16px; background: transparent; border: 0 none; margin-left: 27px; margin-right: 0; display: none;}
+header .container-header .account-nav {
+    float: left;
+    margin-top: 10px;
+}
+header .header-fixed .hamburger {
+    position: relative;
+}
+header .header-fixed .hamburger .navbar-toggle {
+    width: 60px;
+    height: 50px;
+    padding: 14px 15px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .header-fixed .hamburger .icon-bars {
+    background: url(../images/icons/icon-close.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    -webkit-animation: mymove 0.5s backwards;
+    animation: mymove 0.5s backwards;
+}
+header .header-fixed .hamburger .navbar-toggle.collapsed .icon-bars {
+    background: url(../images/icons/icon-bars.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    animation: none;
+}
+header .navbar-collapse {
+    background-color: #f2f7f2;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    z-index: 99;
+}
+header .navbar-collapse {
+    .navbar-left {
+        ul {
+            padding-left: 0;
+            li {
+                list-style: none;
+                border-bottom: 1px solid #c4c8c5;
+                &:first-child {
+                    border-top: 1px solid #c4c8c5;
+                }
+                a {
+                    position: static;
+                    padding: 10px 20px;
+                    display: block;
+                    -webkit-transform: none;
+                    transform: none;
+                    color: @primary-color;
+                }
+            }
+        }
+    }
+}
+header .container-header .account-nav .account-img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+.container-header .cart.dropdown > a .number {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    color: white;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+    line-height: 12px;
+}
+.container-header .login-dropdown {
+    top: 43px;
+    right: 50px;
+    width: 265px;
+}
+.container-header .cart {
+    float: right;
+    margin-top: 14px;
+    margin-left: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+.container-header { position: relative;   width: 100%; margin: 0 auto;}
+.input-search {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.hamburger {
+    float: left;
+}
+.none-display {
+    display: none !important;
+}
+.text-right {
+    float: right;
+    display: inline-block;
+}
+.input-search input.search {
+    padding: 4px 10px;
+    height: 34px;
+    width: 95%;
+    font-size: 13px;
+    border: 1px solid @secondary-color;
+    margin: 10px auto;
+}
+.input-search i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../images/icons/icon-search.png') no-repeat;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+}

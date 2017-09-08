@@ -11,7 +11,7 @@
 			zoom_area_height: "justify",// 放大图片的展示区域的高
 			zoom_area_distance: 10,     // 
 			zoom_easing: true,          // 是否淡入淡出
-			click_to_zoom: false,
+			click_to_zoom: true,
 			zoom_element: "auto",
 			show_descriptions: true,
 			description_location: "bottom",
