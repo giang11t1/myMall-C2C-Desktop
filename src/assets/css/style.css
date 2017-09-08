@@ -5044,7 +5044,7 @@ footer .footer-row-2 {
 }
 /*page detail=========*/
 .section-top-detail {
-  min-height: 500px;
+  min-height: 680px;
 }
 @media only screen and (min-width: 992px) {
   .promotion-modal .modal-dialog {
@@ -5494,7 +5494,7 @@ footer .footer-row-2 {
 .bzoom_wrap {
   border: 1px solid #ebebeb;
   display: inline-block;
-  height: 520px;
+  height: 635px;
   width: 100%;
   padding: 15px 25px;
 }
@@ -5538,7 +5538,7 @@ footer .footer-row-2 {
 @media only screen and (max-width: 1200px) {
   .bzoom_thumb_image {
     width: 400px !important;
-    height: 380px !important;
+    height: 400px !important;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -5994,6 +5994,15 @@ div.tab button.active {
   }
   .member-ship .member-block-inner .member-info {
     opacity: 1;
+  }
+  .bzoom_wrap .bzoom_small_thumbs li {
+    margin: 0px 6px 0px 0px;
+  }
+  .bzoom_wrap {
+    height: 515px;
+  }
+  .section-top-detail {
+    min-height: 565px;
   }
 }
 @media only screen and (min-width: 1200px) {

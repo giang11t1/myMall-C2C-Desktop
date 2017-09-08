@@ -95,6 +95,26 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+            // ===
+            $("#bzoom").zoom({
+                zoom_area_width: 500,
+                autoplay_interval :3000,
+                small_thumbs : 5,
+                autoplay : false,
+                not_set_small_thumb: true,
+                add_ypos: 68
+            });
+        }
+        if (sizeScreen <1200) {
+            // ===
+            $("#bzoom").zoom({
+                zoom_area_width: 500,
+                autoplay_interval :3000,
+                small_thumbs : 5,
+                autoplay : true,
+                not_set_small_thumb: true,
+                add_ypos: 38
+            });
         }
         if (sizeScreen >991 && sizeScreen <1200) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -247,7 +267,27 @@ $(document).ready(function() {
                     centeredSlides: false,
                     spaceBetween: 0,
                 });
+                // ===
+                $("#bzoom").zoom({
+                    zoom_area_width: 500,
+                    autoplay_interval :3000,
+                    small_thumbs : 5,
+                    autoplay : false,
+                    not_set_small_thumb: true,
+                    add_ypos: 68
+                });
           }
+          if (sizeScreen <1200) {
+                // ===
+                $("#bzoom").zoom({
+                    zoom_area_width: 500,
+                    autoplay_interval :3000,
+                    small_thumbs : 5,
+                    autoplay : false,
+                    not_set_small_thumb: true,
+                    add_ypos: 38
+                });
+            }
           if (sizeScreen >991 && sizeScreen <1200) {
             var swiper = new Swiper('.TrendingSlider', {
                 nextButton: '.swiper-button-next',
@@ -380,15 +420,7 @@ $(document).ready(function() {
             centeredSlides: false,
             spaceBetween: 0,
         });
-        // ===
-        $("#bzoom").zoom({
-            zoom_area_width: 500,
-            autoplay_interval :3000,
-            small_thumbs : 5,
-            autoplay : true,
-            not_set_small_thumb: true,
-            add_ypos: 88
-        });
+        
 
     // });
     

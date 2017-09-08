@@ -1,36 +1,137 @@
 ;(function($){
 	$.fn.zoom = function(options){
 		// 默认配置
-		var _option = {
-			align: "left",				// 当前展示图片的位置，则放大的图片在其相对的位置
-			thumb_image_width: 500,		// 当前展示图片的宽
-			thumb_image_height: 400,	// 当前展示图片的高
-			source_image_width: 900,  	// 放大图片的宽
-			source_image_height: 1200,	// 放大图片的高
-			zoom_area_width: 600, 		// 放大图片的展示区域的宽
-			zoom_area_height: "justify",// 放大图片的展示区域的高
-			zoom_area_distance: 10,     // 
-			zoom_easing: true,          // 是否淡入淡出
-			click_to_zoom: true,
-			zoom_element: "auto",
-			show_descriptions: true,
-			description_location: "bottom",
-			description_opacity: 0.9,
-			small_thumbs: 3,			// 小图片展示的数量
-			smallthumb_inactive_opacity: 0.6, 	// 小图片处于非激活状态时的遮罩透明度
-			smallthumb_hide_single: true,    	// 
-			smallthumb_select_on_hover: false,
-			smallthumbs_position: "bottom",		// 小图片的位置
-			show_icon: true,
-			hide_cursor: false,			// 鼠标放到图片时，是否隐藏指针
-			speed: 600,     			// 
-			autoplay: true,				// 是否自动播放
-			autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
-			keyboard: true,
-			right_to_left: false,
-			not_set_small_thumb: false,
-			add_ypos: 0
+		var sizeScreen = $(window).width();
+		if (sizeScreen >=1200) {
+			var _option = {
+				align: "left",				// 当前展示图片的位置，则放大的图片在其相对的位置
+				thumb_image_width: 500,		// 当前展示图片的宽
+				thumb_image_height: 500,// 当前展示图片的高
+				source_image_width: 900,  	// 放大图片的宽
+				source_image_height: 1200,	// 放大图片的高
+				zoom_area_width: 600, 		// 放大图片的展示区域的宽
+				zoom_area_height: "justify",// 放大图片的展示区域的高
+				zoom_area_distance: 10,     // 
+				zoom_easing: true,          // 是否淡入淡出
+				click_to_zoom: true,
+				zoom_element: "auto",
+				show_descriptions: true,
+				description_location: "bottom",
+				description_opacity: 0.9,
+				small_thumbs: 3,			// 小图片展示的数量
+				smallthumb_inactive_opacity: 0.6, 	// 小图片处于非激活状态时的遮罩透明度
+				smallthumb_hide_single: true,    	// 
+				smallthumb_select_on_hover: false,
+				smallthumbs_position: "bottom",		// 小图片的位置
+				show_icon: true,
+				hide_cursor: false,			// 鼠标放到图片时，是否隐藏指针
+				speed: 600,     			// 
+				autoplay: true,				// 是否自动播放
+				autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
+				keyboard: true,
+				right_to_left: false,
+				not_set_small_thumb: false,
+				add_ypos: 0
+			}
 		}
+		if (sizeScreen <1200) {
+			var _option = {
+				align: "left",				// 当前展示图片的位置，则放大的图片在其相对的位置
+				thumb_image_width: 400,		// 当前展示图片的宽
+				thumb_image_height: 400,// 当前展示图片的高
+				source_image_width: 800,  	// 放大图片的宽
+				source_image_height: 1000,	// 放大图片的高
+				zoom_area_width: 500, 		// 放大图片的展示区域的宽
+				zoom_area_height: "justify",// 放大图片的展示区域的高
+				zoom_area_distance: 10,     // 
+				zoom_easing: true,          // 是否淡入淡出
+				click_to_zoom: true,
+				zoom_element: "auto",
+				show_descriptions: true,
+				description_location: "bottom",
+				description_opacity: 0.9,
+				small_thumbs: 3,			// 小图片展示的数量
+				smallthumb_inactive_opacity: 0.6, 	// 小图片处于非激活状态时的遮罩透明度
+				smallthumb_hide_single: true,    	// 
+				smallthumb_select_on_hover: false,
+				smallthumbs_position: "bottom",		// 小图片的位置
+				show_icon: true,
+				hide_cursor: false,			// 鼠标放到图片时，是否隐藏指针
+				speed: 600,     			// 
+				autoplay: true,				// 是否自动播放
+				autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
+				keyboard: true,
+				right_to_left: false,
+				not_set_small_thumb: false,
+				add_ypos: 0
+			}
+		}
+		$( window ).resize(function() {
+			if (sizeScreen >=1200) {
+				var _option = {
+					align: "left",				// 当前展示图片的位置，则放大的图片在其相对的位置
+					thumb_image_width: 500,		// 当前展示图片的宽
+					thumb_image_height: 500,// 当前展示图片的高
+					source_image_width: 900,  	// 放大图片的宽
+					source_image_height: 1200,	// 放大图片的高
+					zoom_area_width: 600, 		// 放大图片的展示区域的宽
+					zoom_area_height: "justify",// 放大图片的展示区域的高
+					zoom_area_distance: 10,     // 
+					zoom_easing: true,          // 是否淡入淡出
+					click_to_zoom: true,
+					zoom_element: "auto",
+					show_descriptions: true,
+					description_location: "bottom",
+					description_opacity: 0.9,
+					small_thumbs: 3,			// 小图片展示的数量
+					smallthumb_inactive_opacity: 0.6, 	// 小图片处于非激活状态时的遮罩透明度
+					smallthumb_hide_single: true,    	// 
+					smallthumb_select_on_hover: false,
+					smallthumbs_position: "bottom",		// 小图片的位置
+					show_icon: true,
+					hide_cursor: false,			// 鼠标放到图片时，是否隐藏指针
+					speed: 600,     			// 
+					autoplay: true,				// 是否自动播放
+					autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
+					keyboard: true,
+					right_to_left: false,
+					not_set_small_thumb: false,
+					add_ypos: 0
+				}
+			}
+			if (sizeScreen <1200) {
+				var _option = {
+					align: "left",				// 当前展示图片的位置，则放大的图片在其相对的位置
+					thumb_image_width: 400,		// 当前展示图片的宽
+					thumb_image_height: 400,// 当前展示图片的高
+					source_image_width: 900,  	// 放大图片的宽
+					source_image_height: 1200,	// 放大图片的高
+					zoom_area_width: 600, 		// 放大图片的展示区域的宽
+					zoom_area_height: "justify",// 放大图片的展示区域的高
+					zoom_area_distance: 10,     // 
+					zoom_easing: true,          // 是否淡入淡出
+					click_to_zoom: true,
+					zoom_element: "auto",
+					show_descriptions: true,
+					description_location: "bottom",
+					description_opacity: 0.9,
+					small_thumbs: 3,			// 小图片展示的数量
+					smallthumb_inactive_opacity: 0.6, 	// 小图片处于非激活状态时的遮罩透明度
+					smallthumb_hide_single: true,    	// 
+					smallthumb_select_on_hover: false,
+					smallthumbs_position: "bottom",		// 小图片的位置
+					show_icon: true,
+					hide_cursor: false,			// 鼠标放到图片时，是否隐藏指针
+					speed: 600,     			// 
+					autoplay: true,				// 是否自动播放
+					autoplay_interval: 6000, 	// 自动播放时每张图片的停留时间
+					keyboard: true,
+					right_to_left: false,
+					not_set_small_thumb: false,
+					add_ypos: 0
+				}
+			}
+		});
 
 		if(options){
 			$.extend(_option, options);
