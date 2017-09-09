@@ -423,8 +423,9 @@ $(document).ready(function() {
         
 
     // });
-    
-// show option when click in breadcrumb
+    // click one time
+    $(".swiper-slide").click(function (){ window.location.href = $(this).find('a').attr('href');});
+    // show option when click in breadcrumb
     function callText(){
         $(".breadcrumb .list-cate li a").click(function(){
             var text = $(this).text();
@@ -498,6 +499,13 @@ $(document).on("click", function(e){
         $(".cate1 .scrollbar").hide();
     }
 });
+$(document).on("click", function(e){
+    if($(e.target).is(".header-search input")){
+      // $("#show-result").show();
+    }else{
+        $("#show-result").hide();
+    }
+});
 // active menu category
 $(".MenuSlide .swiper-slide").click(function(){
     $(".MenuSlide .swiper-slide").removeClass("active");
@@ -533,6 +541,7 @@ if($('#menu_fixed').length > 0){
         }
       });
 }
+
 // show time
 $(function(){    
     var ts = new Date(2012, 0, 1),

@@ -5146,6 +5146,7 @@ footer .footer-row-2 {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   max-height: 3.125em;
+  min-height: 1.5em;
   word-wrap: break-word;
   margin-bottom: 10px;
 }
@@ -5205,6 +5206,9 @@ footer .footer-row-2 {
 .section-top-detail .right-block .list-infor .item-place span {
   color: #818181;
 }
+.section-top-detail .right-block .list-infor .item-color {
+  margin-bottom: 0px;
+}
 .section-top-detail .right-block .list-infor .item-color .list-color {
   padding-left: 0;
   display: inline-block;
@@ -5222,6 +5226,7 @@ footer .footer-row-2 {
   cursor: pointer;
   overflow: hidden;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 .section-top-detail .right-block .list-infor .item-color .list-color li:hover {
   border-color: #fff;
