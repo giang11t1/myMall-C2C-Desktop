@@ -5838,16 +5838,11 @@ div.tab button.active {
   margin-right: 15px;
   font-size: 14px;
 }
+.section-menu .list-filter .price-wrap {
+  float: left;
+}
 .section-menu .list-filter .color-choose {
   margin-right: 15px;
-}
-.section-menu .list-filter .other-price {
-  margin-left: -26%;
-}
-@media only screen and (max-width: 1200px) {
-  .section-menu .list-filter .other-price {
-    margin-left: -11%;
-  }
 }
 .section-menu .list-filter .other-price,
 .section-menu .list-filter .color-choose,
@@ -6079,6 +6074,12 @@ div.tab button.active {
   .bzoom_wrap {
     padding: 15px 20%;
   }
+  .section-menu .list-filter .price-wrap {
+    margin-bottom: 10px;
+  }
+  .section-menu .list-filter .pull-right {
+    float: left !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .section-trending {
@@ -6168,7 +6169,7 @@ div.tab button.active {
     font-size: 14px;
   }
   footer .f-block-2 {
-    margin-bottom: 22px;
+    margin-bottom: 74px;
   }
   footer {
     padding: 20px 20px;
@@ -6192,6 +6193,22 @@ div.tab button.active {
     width: 14px;
     height: 22px;
     left: 0;
+  }
+  .section-menu .list-filter .color-choose {
+    margin-right: 10px;
+  }
+  .section-menu .list-filter .pull-right {
+    margin-right: 13px;
+  }
+  .section-menu .list-filter .price-wrap,
+  .section-menu .swiper-wrapper {
+    padding-left: 10px;
+  }
+  .section-recommend .more-recommend a {
+    padding: 7px 65px;
+  }
+  .section-menu .list-filter .other-price {
+    margin-right: 15px;
   }
 }
 @media only screen and (min-device-width: 415px) and (max-device-width: 666px) {
@@ -6295,6 +6312,10 @@ div.tab button.active {
   .section-top-detail .right-block .list-infor .item-button .btn {
     padding: 5px 10px;
   }
+  .section-menu .list-filter .pull-right {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .section-trending .swiper-slide .text {
@@ -6347,6 +6368,14 @@ div.tab button.active {
   .section-top-detail .right-block .list-infor .item-price .new-price,
   .section-top-detail .right-block .list-infor .item-price .sale {
     font-size: 21px;
+  }
+  .block-menu .section-inner {
+    height: auto;
+    max-height: 63px;
+  }
+  .section-menu .list-filter .pull-right {
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 }
 @media only screen and (width: 768px) {

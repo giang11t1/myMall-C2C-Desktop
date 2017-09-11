@@ -56,7 +56,7 @@ $(document).ready(function() {
             paginationClickable: true,
             spaceBetween: 30,
             centeredSlides: true,
-            // autoplay: 2500,
+            autoplay: 2500,
             autoplayDisableOnInteraction: false
         });
         //slider
@@ -104,6 +104,14 @@ $(document).ready(function() {
                 not_set_small_thumb: true,
                 add_ypos: 68
             });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView:13,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
         }
         if (sizeScreen <1200) {
             // ===
@@ -141,6 +149,14 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 10,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
         }
         if (sizeScreen >=768 && sizeScreen < 991) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -164,6 +180,14 @@ $(document).ready(function() {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 slidesPerView: 4,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 8,
                 centeredSlides: false,
                 spaceBetween: 0,
             });
@@ -191,6 +215,14 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 6,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
           }
         if (sizeScreen >320 && sizeScreen <= 414) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -215,6 +247,14 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 4,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
           }
         if (sizeScreen <=320 ) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -236,6 +276,14 @@ $(document).ready(function() {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 slidesPerView: 2,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 3,
                 centeredSlides: false,
                 spaceBetween: 0,
             });
@@ -276,6 +324,14 @@ $(document).ready(function() {
                     not_set_small_thumb: true,
                     add_ypos: 68
                 });
+                 //menu
+                var swiper = new Swiper('.MenuSlide', {
+                    nextButton: '.next-pre .swiper-button-next',
+                    prevButton: '.next-pre .swiper-button-prev',
+                    slidesPerView:13,
+                    centeredSlides: false,
+                    spaceBetween: 0,
+                });
           }
           if (sizeScreen <1200) {
                 // ===
@@ -313,6 +369,14 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 10,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
           }
           if (sizeScreen >=768 && sizeScreen < 991) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -334,6 +398,14 @@ $(document).ready(function() {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 slidesPerView: 4,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 8,
                 centeredSlides: false,
                 spaceBetween: 0,
             });
@@ -361,6 +433,14 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+            //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 6,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
           }
           if (sizeScreen >320 && sizeScreen <= 414) {
             var swiper = new Swiper('.TrendingSlider', {
@@ -382,6 +462,14 @@ $(document).ready(function() {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 slidesPerView: 3,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
+             //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 4,
                 centeredSlides: false,
                 spaceBetween: 0,
             });
@@ -409,22 +497,23 @@ $(document).ready(function() {
                 centeredSlides: false,
                 spaceBetween: 0,
             });
+            //menu
+            var swiper = new Swiper('.MenuSlide', {
+                nextButton: '.next-pre .swiper-button-next',
+                prevButton: '.next-pre .swiper-button-prev',
+                slidesPerView: 3,
+                centeredSlides: false,
+                spaceBetween: 0,
+            });
           }
-        });
-        
-        //menu
-        var swiper = new Swiper('.MenuSlide', {
-            nextButton: '.next-pre .swiper-button-next',
-            prevButton: '.next-pre .swiper-button-prev',
-            slidesPerView:13,
-            centeredSlides: false,
-            spaceBetween: 0,
-        });
+        });      
         
 
     // });
     // click one time
-    $(".swiper-slide").click(function (){ window.location.href = $(this).find('a').attr('href');});
+    $(".swiper-slide").click(function (){
+        window.location.href = $(this).find('a').attr('href');
+    });
     // show option when click in breadcrumb
     function callText(){
         $(".breadcrumb .list-cate li a").click(function(){

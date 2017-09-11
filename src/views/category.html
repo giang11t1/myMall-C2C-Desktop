@@ -123,26 +123,27 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="list-filter">
-                        <ul class="price-level">
-                            <li><b>Mức giá:</b></li>
-                            <li><a href="javascript:void(0);">Dưới 100k</a></li>
-                            <li><a href="javascript:void(0);">100k-150k</a></li>
-                            <li><a href="javascript:void(0);">150k-200k</a></li>
-                            <li><a href="javascript:void(0);">200k-250k</a></li>
-                        </ul>
-                        <div class="other-price">
-                            <!-- <label>Mức giá khác:</label> -->
-                            <select class="form-control" id="resizing_select">
-                                <option>Mức giá khác</option>
-                                <option>250k-300k</option>
-                                <option>300k-500k</option>
-                                <option>500k-1000k</option>
-                            </select>
-                            <select id="width_tmp_select">
-                                <option id="width_tmp_option"></option>
-                            </select>
-                        </div>
+                    <div class="list-filter hidden-xs">
+                        <div class="price-wrap">
+                            <ul class="price-level">
+                                <li><b>Mức giá:</b></li>
+                                <li><a href="javascript:void(0);">Dưới 100k</a></li>
+                                <li><a href="javascript:void(0);">100k-150k</a></li>
+                                <li><a href="javascript:void(0);">150k-200k</a></li>
+                                <li><a href="javascript:void(0);">200k-250k</a></li>
+                            </ul>
+                            <div class="other-price">
+                                <select class="form-control" id="resizing_select">
+                                    <option>Mức giá khác</option>
+                                    <option>250k-300k</option>
+                                    <option>300k-500k</option>
+                                    <option>500k-1000k</option>
+                                </select>
+                                <select id="width_tmp_select">
+                                    <option id="width_tmp_option"></option>
+                                </select>
+                            </div>
+                        </div>                        
                         <div class="pull-right">
                             <div class="color-choose">
                                 <label>Màu sắc:</label>
@@ -165,6 +166,37 @@
                                 </select>
                                 <select id="width_tmp_select2">
                                     <option id="width_tmp_option2"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-filter visible-xs">
+                        <div class="price-wrap">
+                            <div class="other-price">
+                                <select class="form-control">
+                                    <option>Mức giá</option>
+                                    <option>250k-300k</option>
+                                    <option>300k-500k</option>
+                                    <option>5000k-100.000k</option>
+                                </select>
+                            </div>
+                        </div>                        
+                        <div class="pull-right">
+                            <div class="color-choose">
+                                <select class="form-control">
+                                    <option>Màu sắc</option>
+                                    <option>Da</option>
+                                    <option>Đỏ</option>
+                                    <option>Cam</option>
+                                </select>
+                            </div>
+                            <div class="size-choose">
+                                <select class="form-control">
+                                    <option>Size</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
                                 </select>
                             </div>
                         </div>
