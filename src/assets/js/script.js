@@ -607,7 +607,7 @@ $('#resizing_select').change(function(){
 });
 $('#resizing_select1').change(function(){
     $("#width_tmp_option1").html($('#resizing_select1 option:selected').text());
-    $(this).width($("#width_tmp_select1").width()+5);  
+    $(this).width($("#width_tmp_select1").width()+10);  
 });
 $('#resizing_select2').change(function(){
     $("#width_tmp_option2").html($('#resizing_select2 option:selected').text());

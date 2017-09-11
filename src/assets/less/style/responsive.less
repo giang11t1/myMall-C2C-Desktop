@@ -101,6 +101,27 @@
     .section-menu .list-filter .pull-right {
         float: left !important;
     }
+    .swiper-button-next {
+        background-image: url(../images/icons/icon-chevron-right.png);
+        right: 10px;
+        background-size: 100%;
+        left: auto;
+        width: 14px;
+        height: 22px;
+    } 
+
+    .swiper-button-prev {
+        background-image: url(../images/icons/icon-chevron-left.png);
+        right: 10px;
+        background-size: 100%;
+        left: auto;
+        width: 14px;
+        height: 22px;
+        left: 0;
+    }
+    .section-top-detail .left-block {
+        margin-bottom: 20px;
+    }
 }
 @media only screen and (max-width : @screen-xs-max) {
     .section-trending {
@@ -177,9 +198,7 @@
     .swiper-container.MobileSlide {
         height: 320px;
     }
-    .section-top-detail .left-block {
-        margin-bottom: 20px;
-    }
+    
     .section-top-detail .right-block .list-infor .item-share .list-icon li {
         margin-bottom: 0;
     }
@@ -198,26 +217,7 @@
     } 
     .tabcontent img {
         max-width: 100%;
-    }  
-
-    .swiper-button-next {
-        background-image: url(../images/icons/icon-chevron-right.png);
-        right: 10px;
-        background-size: 100%;
-        left: auto;
-        width: 14px;
-        height: 22px;
-    } 
-
-    .swiper-button-prev {
-        background-image: url(../images/icons/icon-chevron-left.png);
-        right: 10px;
-        background-size: 100%;
-        left: auto;
-        width: 14px;
-        height: 22px;
-        left: 0;
-    }
+    }      
     .section-menu .list-filter .color-choose {
         margin-right: 10px;
     }
@@ -239,6 +239,11 @@
     }
     .section-banner-shop {
         height: 300px;
+    }
+    .section-top-detail .right-block .list-infor .item-place span {
+        display: block;
+        width: 100%;
+        margin-top: 46px;
     }
 }
 @media only screen and (min-device-width: 415px) and (max-device-width: 666px){
@@ -413,6 +418,20 @@
     }
     .section-banner-shop {
         height: 280px;
+    }
+    .section-top-detail .right-block .list-infor .item-place .place-select {
+        display: block;
+        width: 100%;
+    }
+    .section-top-detail .right-block .list-infor .item-place .place-select .form-control{
+        width: auto;
+    }
+    .section-top-detail .right-block .list-infor .item-place .transport-select {
+        margin-top: 10px;
+    }
+    .section-top-detail .right-block .list-infor .item-place span {
+         width: auto;
+         display: inline;
     }
 }
 @media only screen and (width : @screen-sm-min) { 
