@@ -574,11 +574,6 @@ $( ".btn-chat")
     $(this).children().removeClass("icon-chat1");
     $(this).children().addClass("icon-chat");
   });
-// click button active
-$(".item-button button").click(function(){
-    $(".item-button button").removeClass("active");
-    $(this).addClass("active");
-});
 // choose cate 1
 //show div when click
 $(document).on("click", function(e){
@@ -608,15 +603,15 @@ $(".wrap_pagination ul li a").click(function(){
 // resize select option
 $('#resizing_select').change(function(){
     $("#width_tmp_option").html($('#resizing_select option:selected').text());
-    $(this).width($("#width_tmp_select").width());  
+    $(this).width($("#width_tmp_select").width()+5);  
 });
 $('#resizing_select1').change(function(){
     $("#width_tmp_option1").html($('#resizing_select1 option:selected').text());
-    $(this).width($("#width_tmp_select1").width());  
+    $(this).width($("#width_tmp_select1").width()+5);  
 });
 $('#resizing_select2').change(function(){
     $("#width_tmp_option2").html($('#resizing_select2 option:selected').text());
-    $(this).width($("#width_tmp_select2").width());  
+    $(this).width($("#width_tmp_select2").width()+5);  
 });
 // fix position menu cate
 if($('#menu_fixed').length > 0){
