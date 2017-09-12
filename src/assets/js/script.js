@@ -108,7 +108,7 @@ $(document).ready(function() {
             var swiper = new Swiper('.MenuSlide', {
                 nextButton: '.next-pre .swiper-button-next',
                 prevButton: '.next-pre .swiper-button-prev',
-                slidesPerView:13,
+                slidesPerView: 10,
                 centeredSlides: false,
                 spaceBetween: 0,
             });
@@ -328,7 +328,7 @@ $(document).ready(function() {
                 var swiper = new Swiper('.MenuSlide', {
                     nextButton: '.next-pre .swiper-button-next',
                     prevButton: '.next-pre .swiper-button-prev',
-                    slidesPerView:13,
+                    slidesPerView: 10,
                     centeredSlides: false,
                     spaceBetween: 0,
                 });
