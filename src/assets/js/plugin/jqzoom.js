@@ -8,7 +8,7 @@
 				thumb_image_width: 500,		// 当前展示图片的宽
 				thumb_image_height: 500,// 当前展示图片的高
 				source_image_width: 900,  	// 放大图片的宽
-				source_image_height: 1200,	// 放大图片的高
+				source_image_height: 900,	// 放大图片的高
 				zoom_area_width: 600, 		// 放大图片的展示区域的宽
 				zoom_area_height: "justify",// 放大图片的展示区域的高
 				zoom_area_distance: 10,     // 
@@ -40,7 +40,7 @@
 				thumb_image_width: 400,		// 当前展示图片的宽
 				thumb_image_height: 400,// 当前展示图片的高
 				source_image_width: 800,  	// 放大图片的宽
-				source_image_height: 1000,	// 放大图片的高
+				source_image_height: 800,	// 放大图片的高
 				zoom_area_width: 500, 		// 放大图片的展示区域的宽
 				zoom_area_height: "justify",// 放大图片的展示区域的高
 				zoom_area_distance: 10,     // 
@@ -73,7 +73,7 @@
 					thumb_image_width: 500,		// 当前展示图片的宽
 					thumb_image_height: 500,// 当前展示图片的高
 					source_image_width: 900,  	// 放大图片的宽
-					source_image_height: 1200,	// 放大图片的高
+					source_image_height: 900,	// 放大图片的高
 					zoom_area_width: 600, 		// 放大图片的展示区域的宽
 					zoom_area_height: "justify",// 放大图片的展示区域的高
 					zoom_area_distance: 10,     // 
@@ -105,7 +105,7 @@
 					thumb_image_width: 400,		// 当前展示图片的宽
 					thumb_image_height: 400,// 当前展示图片的高
 					source_image_width: 900,  	// 放大图片的宽
-					source_image_height: 1200,	// 放大图片的高
+					source_image_height: 900,	// 放大图片的高
 					zoom_area_width: 600, 		// 放大图片的展示区域的宽
 					zoom_area_height: "justify",// 放大图片的展示区域的高
 					zoom_area_distance: 10,     // 
@@ -156,7 +156,7 @@
 			var scalex = _option.thumb_image_width / _option.source_image_width,
 				scaley = _option.thumb_image_height / _option.source_image_height,
 				scxy = _option.thumb_image_width / _option.thumb_image_height;
-
+				// alert(scaley);
 			var $bzoom_magnifier, $bzoom_magnifier_img, $bzoom_zoom_area, $bzoom_zoom_img;
 
 			// 遮罩显示的区域

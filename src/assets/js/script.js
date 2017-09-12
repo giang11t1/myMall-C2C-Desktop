@@ -102,7 +102,7 @@ $(document).ready(function() {
                 small_thumbs : 5,
                 autoplay : false,
                 not_set_small_thumb: true,
-                add_ypos: 68
+                add_ypos: 0
             });
              //menu
             var swiper = new Swiper('.MenuSlide', {
@@ -121,7 +121,7 @@ $(document).ready(function() {
                 small_thumbs : 5,
                 autoplay : true,
                 not_set_small_thumb: true,
-                add_ypos: 38
+                add_ypos: 0
             });
         }
         if (sizeScreen >991 && sizeScreen <1200) {
@@ -322,7 +322,7 @@ $(document).ready(function() {
                     small_thumbs : 5,
                     autoplay : false,
                     not_set_small_thumb: true,
-                    add_ypos: 68
+                    add_ypos: 0
                 });
                  //menu
                 var swiper = new Swiper('.MenuSlide', {
@@ -341,7 +341,7 @@ $(document).ready(function() {
                     small_thumbs : 5,
                     autoplay : false,
                     not_set_small_thumb: true,
-                    add_ypos: 38
+                    add_ypos: 0
                 });
             }
           if (sizeScreen >991 && sizeScreen <1200) {

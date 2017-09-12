@@ -3398,8 +3398,7 @@ header .account-nav .nav li.account-block .dropdown-toggle {
 }
 @media only screen and (min-width: 1200px) {
   header {
-    height: 90px;
-    margin-bottom: 20px;
+    height: 135px;
   }
   header .navbar-brand {
     height: 60px;
@@ -3409,8 +3408,7 @@ header .account-nav .nav li.account-block .dropdown-toggle {
 }
 @media only screen and (max-width: 1200px) {
   header {
-    height: 90px;
-    margin-bottom: 20px;
+    height: 135px;
   }
   header .navbar-brand {
     position: static;
@@ -5075,7 +5073,6 @@ footer .footer-row-2 {
 .breadcrumb {
   display: inline-block;
   width: 100%;
-  margin-top: 25px;
   height: 30px;
   padding: 0;
 }
@@ -5150,9 +5147,10 @@ footer .footer-row-2 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  max-height: 3.125em;
-  min-height: 2.5em;
+  max-height: 2.2em;
+  min-height: 2.4em;
   word-wrap: break-word;
+  margin-bottom: 5px;
 }
 .section-top-detail .right-block .list-infor {
   padding-left: 0;
@@ -5612,6 +5610,8 @@ ul .bzoom_small_thumbs li,
 }
 .bzoom_magnifier div {
   overflow: hidden;
+  /*width: 200px !important;
+    height: 200px !important;*/
 }
 .bzoom_wrap .bzoom_small_thumbs {
   overflow: hidden;
