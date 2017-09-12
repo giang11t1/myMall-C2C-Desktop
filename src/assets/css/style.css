@@ -3716,6 +3716,7 @@ footer {
   background: #fff;
   padding: 20px 0;
   border-top: 1px solid #ebebeb;
+  margin-top: 100px;
 }
 footer .f-block-4 {
   padding-right: 0;
@@ -5150,9 +5151,8 @@ footer .footer-row-2 {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   max-height: 3.125em;
-  min-height: 1.5em;
+  min-height: 2.5em;
   word-wrap: break-word;
-  margin-bottom: 10px;
 }
 .section-top-detail .right-block .list-infor {
   padding-left: 0;
@@ -5890,6 +5890,7 @@ div.tab button.active {
   position: relative;
   background: url('../images/upload/banner/banner-detail.jpg') no-repeat;
   background-size: 100% 100%;
+  margin-top: 10px;
 }
 .section-banner-shop .section-inner {
   height: 145px;
@@ -6089,6 +6090,10 @@ div.tab button.active {
   .section-top-detail .left-block {
     margin-bottom: 20px;
   }
+  .swiper-wrapper .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .section-trending {
@@ -6209,6 +6214,13 @@ div.tab button.active {
     display: block;
     width: 100%;
     margin-top: 46px;
+  }
+  header .account-nav .account-label {
+    display: none;
+  }
+  header .container-header .account-nav .account-img {
+    width: 35px;
+    height: 35px;
   }
 }
 @media only screen and (min-device-width: 415px) and (max-device-width: 666px) {
