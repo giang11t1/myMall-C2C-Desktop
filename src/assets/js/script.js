@@ -70,6 +70,9 @@ $(document).ready(function() {
         });
         //trending
         var sizeScreen = $(window).width();
+        if (sizeScreen >991) {
+            $(".block-list-link .list-safe").collapse("show");
+        }
         if (sizeScreen >=1200) {
             var swiper = new Swiper('.TrendingSlider', {
                 nextButton: '.swiper-button-next',
@@ -344,6 +347,11 @@ $(document).ready(function() {
                     add_ypos: 0
                 });
             }
+            if (sizeScreen >991) {
+                $(".block-list-link .list-safe").collapse("show");
+            }else {
+                $(".block-list-link .list-safe").collapse("hide");
+            }
           if (sizeScreen >991 && sizeScreen <1200) {
             var swiper = new Swiper('.TrendingSlider', {
                 nextButton: '.swiper-button-next',
@@ -577,7 +585,7 @@ $( ".btn-chat")
 // choose cate 1
 //show div when click
 $(document).on("click", function(e){
-    if($(e.target).is(".cate1 a")){
+    if($(e.target).is(".cate1 .showName")){
       $(".cate1 .scrollbar").show();
     }else{
         $(".cate1 .scrollbar").hide();
@@ -613,6 +621,12 @@ $('#resizing_select2').change(function(){
     $("#width_tmp_option2").html($('#resizing_select2 option:selected').text());
     $(this).width($("#width_tmp_select2").width()+5);  
 });
+
+// click show list link
+/*$(".block-list-link .title-block").click(function(){
+    $(this).find(".fa-angle-down, .fa-angle-up").toggle();
+});*/
+
 // fix position menu cate
 if($('#menu_fixed').length > 0){
     var eTop = $('#menu_fixed').offset().top; //get the offset top of the element
