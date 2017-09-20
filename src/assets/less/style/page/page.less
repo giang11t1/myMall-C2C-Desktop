@@ -63,6 +63,7 @@
     position: relative;
 }
 .section-trending {
+    padding-top: 0;
     background: #fff;
     .swiper-slide {
         height: 70px;
@@ -617,7 +618,7 @@
                     height: 19px;
                     display: inline-block;
                     background: url('../images/icons/icon-chat1.png') no-repeat;
-                }
+                }                
                 .btn-add-cart {
                     i {
                         font-size: 20px;
@@ -660,12 +661,10 @@
                         outline: none;
                         }                }
                 .btn-buy {
-                    &.active {
-                        background: @primary-color;
-                        color: #fff;
-                        i {
-                            background: url('../images/icons/icon-cart.png') no-repeat;
-                        }
+                    background: @primary-color;
+                    color: #fff;
+                    i {
+                        background: url('../images/icons/icon-cart.png') no-repeat;
                     }
                 }
                 .btn-chat {
@@ -1039,8 +1038,8 @@ div.tab button.active {
         margin: 30px auto;
         max-height: 100%;
         max-width: 554px;
-        width: auto;
-        height: auto;
+        width: auto !important;
+        height: auto !important;
         @media only screen and (max-width: @screen-lg-min) {
             max-width: 454px;
         }
@@ -1124,10 +1123,13 @@ div.tab button.active {
         width: 100%;
         background: #e1e1e1;
         margin-top: 30px;
-        height: 45px;
+        .keyword-result {
+            margin-bottom: 10px;
+        }
         .breadcrumb {
             background: #e1e1e1;
             margin-top: 3px;
+            margin-bottom: 5px;
             ul {
                 li {
                     font-size: 14px;
@@ -1275,7 +1277,10 @@ div.tab button.active {
             #resizing_select {
                 width: 145px;
             }
-            #resizing_select1,#resizing_select2 {
+            #resizing_select1 {
+                width: 125px;
+            }
+            #resizing_select2 {
                 width: 110px;
             }            
         }

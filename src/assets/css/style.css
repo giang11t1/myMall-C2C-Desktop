@@ -2667,6 +2667,12 @@ label.error {
 #width_tmp_select2 {
   display: none;
 }
+#fixed-block-menu {
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
 .position-menu {
   z-index: 999;
   width: 100%;
@@ -2676,6 +2682,10 @@ label.error {
   background: #fff;
   border-bottom: 1px solid #ebebeb;
   box-shadow: 11px 5px 6px -5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
 }
 .position-menu .section-inner {
   margin-top: 0 !important;
@@ -4479,14 +4489,6 @@ footer.margin-top {
 }
 .popular-product .shop-infor a {
   color: #ff9000;
-  width: 90px;
-  display: inline-block;
-  overflow: hidden;
-  /*word-wrap: break-word;*/
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  max-height: 1.5em;
 }
 .popular-product .shop-infor .vote {
   display: inline-block;
@@ -4672,6 +4674,7 @@ footer.margin-top {
 .wrap_pagination .pagination li a {
   margin-right: 8px;
   color: #464646;
+  z-index: 1;
 }
 .wrap_pagination .pagination li a:hover,
 .wrap_pagination .pagination li a:focus,
@@ -4749,6 +4752,7 @@ footer.margin-top {
   position: relative;
 }
 .section-trending {
+  padding-top: 0;
   background: #fff;
 }
 .section-trending .swiper-slide {
@@ -5358,11 +5362,11 @@ footer.margin-top {
 .section-top-detail .right-block .list-infor .item-button .btn:active {
   outline: none;
 }
-.section-top-detail .right-block .list-infor .item-button .btn-buy.active {
+.section-top-detail .right-block .list-infor .item-button .btn-buy {
   background: #ff9000;
   color: #fff;
 }
-.section-top-detail .right-block .list-infor .item-button .btn-buy.active i {
+.section-top-detail .right-block .list-infor .item-button .btn-buy i {
   background: url('../images/icons/icon-cart.png') no-repeat;
 }
 .section-top-detail .right-block .list-infor .item-button .btn-chat.active {
@@ -5704,8 +5708,8 @@ div.tab button.active {
   margin: 30px auto;
   max-height: 100%;
   max-width: 554px;
-  width: auto;
-  height: auto;
+  width: auto !important;
+  height: auto !important;
 }
 @media only screen and (max-width: 1200px) {
   .tabcontent img {
@@ -5782,11 +5786,14 @@ div.tab button.active {
   width: 100%;
   background: #e1e1e1;
   margin-top: 30px;
-  height: 45px;
+}
+.block-menu .section-inner .keyword-result {
+  margin-bottom: 10px;
 }
 .block-menu .section-inner .breadcrumb {
   background: #e1e1e1;
   margin-top: 3px;
+  margin-bottom: 5px;
 }
 .block-menu .section-inner .breadcrumb ul li {
   font-size: 14px;
@@ -5936,7 +5943,9 @@ div.tab button.active {
 }
 .section-menu .list-filter .other-price #resizing_select1,
 .section-menu .list-filter .color-choose #resizing_select1,
-.section-menu .list-filter .size-choose #resizing_select1,
+.section-menu .list-filter .size-choose #resizing_select1 {
+  width: 125px;
+}
 .section-menu .list-filter .other-price #resizing_select2,
 .section-menu .list-filter .color-choose #resizing_select2,
 .section-menu .list-filter .size-choose #resizing_select2 {
@@ -6295,8 +6304,24 @@ div.tab button.active {
   .section-top-detail .right-block.left-side .list-infor .item-share li {
     margin-left: 0;
   }
+  .section-top-detail .right-block .list-infor .item-place .place-select {
+    margin-bottom: 10px;
+  }
+  .section-top-detail .right-block .list-infor .item-place span {
+    width: auto;
+    display: inline;
+    margin-top: 0;
+  }
 }
-@media only screen and (min-device-width: 415px) and (max-device-width: 666px) {
+@media only screen and (max-width: 414px) {
+  .section-top-detail .right-block .list-infor .item-place span {
+    display: block;
+    width: 100%;
+    margin-top: -10px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 666px) {
   .section-trending .swiper-slide .text {
     bottom: 0px;
   }
@@ -6308,7 +6333,7 @@ div.tab button.active {
     margin-left: 25%;
   }
 }
-@media only screen and (min-device-width: 667px) and (max-device-width: 767px) {
+@media only screen and (min-width: 667px) and (max-width: 767px) {
   .section-trending .swiper-slide .text {
     bottom: 0px;
   }
@@ -6320,7 +6345,7 @@ div.tab button.active {
     margin-left: 25%;
   }
 }
-@media only screen and (min-device-width: 376px) and (max-device-width: 412px) {
+@media only screen and (min-width: 376px) and (max-width: 412px) {
   .popular-product .wrap-text .new-price {
     font-size: 14px;
     margin-left: 0;
@@ -6345,7 +6370,7 @@ div.tab button.active {
     width: 25%;
   }
 }
-@media only screen and (min-device-width: 361px) and (max-device-width: 375px) {
+@media only screen and (min-width: 361px) and (max-width: 375px) {
   .section-flashsale .wrap-flashsale .wrap-img {
     width: 115px;
     height: 115px;
@@ -6377,6 +6402,9 @@ div.tab button.active {
     height: 30px;
     padding: 0px 8px;
   }
+  .section-top-detail .right-block .list-infor .item-place span {
+    float: right;
+  }
 }
 @media only screen and (min-width: 321px) and (max-width: 360px) {
   .section-trending .swiper-slide .text {
@@ -6407,6 +6435,9 @@ div.tab button.active {
   }
   .container-header .cart {
     margin-left: 10px;
+  }
+  .section-top-detail .right-block .list-infor .item-place span {
+    float: right;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -6461,10 +6492,6 @@ div.tab button.active {
   .section-top-detail .right-block .list-infor .item-price .sale {
     font-size: 21px;
   }
-  .block-menu .section-inner {
-    height: auto;
-    max-height: 63px;
-  }
   .section-menu .list-filter .pull-right {
     margin-bottom: 10px;
     margin-left: 10px;
@@ -6482,19 +6509,15 @@ div.tab button.active {
   .section-top-detail .right-block .list-infor .item-place .place-select .form-control {
     width: auto;
   }
-  .section-top-detail .right-block .list-infor .item-place .transport-select {
-    margin-top: 10px;
-  }
-  .section-top-detail .right-block .list-infor .item-place span {
-    width: auto;
-    display: inline;
-  }
   header .container-header .account-nav .account-img {
     width: 30px;
     height: 30px;
   }
   .container-header .cart {
     margin-left: 10px;
+  }
+  .section-top-detail .right-block .list-infor .item-place span {
+    margin-top: 0px;
   }
 }
 @media only screen and (width: 768px) {
