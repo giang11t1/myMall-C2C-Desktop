@@ -474,6 +474,16 @@ header {
       text-decoration: line-through;
     }
 }
+.account-block {
+    .dropdown-menu {
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 /*header mobile*/
 .container-header {min-height: 135px; background: #fff; width: 100%; z-index: 999; box-shadow: 0px 2px 1px #e7e7e7;-webkit-box-shadow: 0px 1px 1px #e7e7e7;-moz-box-shadow: 0px 1px 1px #e7e7e7; margin-bottom: 4px;border-top: 5px solid #2bc5f8;}
 .container-header .btn-cat {display: block; line-height: 48px; width: 30px;}
@@ -578,6 +588,16 @@ header .container-header .account-nav .account-img {
     right: 50px;
     width: 265px;
 }
+.container-header {
+    .account-dropdown {
+        top: 43px;
+        right: 50px;
+        left: auto;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
 .container-header .cart {
     float: right;
     margin-top: 14px;
@@ -609,12 +629,13 @@ header .container-header .account-nav .account-img {
     border: 1px solid @secondary-color;
     margin: 10px auto;
 }
-.input-search i {
+.input-search button {
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: url('../images/icons/icon-search.png') no-repeat;
+    width: 20px;
+    height: 20px;
     position: absolute;
+    border: none;
     top: 18px;
     right: 22px;
+    background: url('../images/icons/icon-search.png') no-repeat;
 }

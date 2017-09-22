@@ -1,0 +1,26 @@
+{% set current_page = 'error' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="container">
+        <!-- main empty shopping  -->
+        <div class="wrap-error col-md-12">
+            <div class="col-sm-5 left-error hidden-xs">
+                <img src="assets/images/gif-bear.gif" alt="">
+            </div>
+            <div class="col-sm-7 right-error col-xs-12">
+                <h1>404</h1>
+                <h2>chúng tôi không tìm thấy trang bạn yêu cầu</h2>
+                <p class="decript">Có vẻ như trang này không tồn tại hoặc sản phẩm đã bị xóa khỏi website.</p>
+                <ul class="list-link">
+                    <li class="item-link">
+                        <a href="#" class="home" title="Về trang chủ">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+{% block footer%} {% include "block/_footer-error.html" %} {% endblock %}

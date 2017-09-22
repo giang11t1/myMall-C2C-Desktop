@@ -103,7 +103,7 @@ $(document).ready(function() {
                 zoom_area_width: 500,
                 autoplay_interval :3000,
                 small_thumbs : 5,
-                autoplay : false,
+                autoplay : true,
                 not_set_small_thumb: true,
                 add_ypos: 0
             });
@@ -323,7 +323,7 @@ $(document).ready(function() {
                     zoom_area_width: 500,
                     autoplay_interval :3000,
                     small_thumbs : 5,
-                    autoplay : false,
+                    autoplay : true,
                     not_set_small_thumb: true,
                     add_ypos: 0
                 });
@@ -342,7 +342,7 @@ $(document).ready(function() {
                     zoom_area_width: 500,
                     autoplay_interval :3000,
                     small_thumbs : 5,
-                    autoplay : false,
+                    autoplay : true,
                     not_set_small_thumb: true,
                     add_ypos: 0
                 });
