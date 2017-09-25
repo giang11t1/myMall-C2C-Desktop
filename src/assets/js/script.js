@@ -622,6 +622,10 @@ $('#resizing_select2').change(function(){
     $(this).width($("#width_tmp_select2").width()+5);  
 });
 
+ $('#pro-brand').carousel({
+    interval: 4000
+});
+
 // click show list link
 /*$(".block-list-link .title-block").click(function(){
     $(this).find(".fa-angle-down, .fa-angle-up").toggle();

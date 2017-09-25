@@ -1,0 +1,313 @@
+{% set current_page = 'myxu' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="inner-breadcrumb">
+                <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <ul>
+                    <li class="cate1">
+                        <a class="showName" href="#">Máy tính & Laptop</a>
+                        <div class="scrollbar">
+                            <ul class="list-cate">
+                                <li><a href="#" title="">Thời trang nam</a></li>
+                                <li><a href="#" title="">Điện thoại và phụ kiện</a></li>
+                                <li><a href="#" title="">Thiết bị điện tử</a></li>
+                                <li><a href="#" title="">Máy tính & Laptop</a></li>
+                                <li><a href="#" title="">Máy ảnh - Máy quay phim</a></li>
+                                <li><a href="#" title="">Đồng hồ</a></li>
+                                <li><a href="#" title="">Giày dép nam</a></li>
+                                <li><a href="#" title="">Thiết bị gia dụng</a></li>
+                                <li><a href="#" title="">Thể thao & Du lịch</a></li>
+                                <li><a href="#" title="">Bách hóa online</a></li>
+                                <li><a href="#" title="">Thời trang nữ</a></li>
+                                <li><a href="#" title="">Mẹ & bé</a></li>
+                                <li><a href="#" title="">Nhà cửa & đời sống</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Máy tính</a></li>
+                    <li><a href="#">Nhat duy laptop</a></li>
+                    <li><a href="#">Acer ES1-567-323</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section my-acc">
+        <div class="section-inner">
+            <div class="container">
+                <div class="acc-header">
+                <h2><span class="f-name f-account">Tài khoản của bạn</span></h2>
+                <div class="acc-greeting">
+                    <h4>Chào, <strong>An</strong></h4>
+                    <h5>Tại đây bạn có thể theo dõi các hoạt động gần đây của tài khoản, cũng như quản lý, thay đổi thông tin tài khoản.</h5>
+                </div>
+                </div>
+                <ul class="acc-tab">
+                    <li><a class="active" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a href="account.html">Thông tin tài khoản</a></li>
+                    <li><a href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li class="clear"></li>
+                </ul>
+                <div class="acc-body">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="status-myxu row">
+                                <div class="col-md-6 content">
+                                    <p>Số myXu bạn đang có</p>
+                                    <p><span class="icon-big"></span><span class="color-green">21.105</span>&nbsp;myXu</p>
+                                </div>
+                                <div class="col-md-6 content">
+                                    <p>Số myXu đang chờ xét</p>
+                                    <p><span class="icon-big"></span><span class="color-orange">1.105</span>&nbsp;myXu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="history-myxu">
+                                <h4>Lịch sử myXu của bạn</h4>
+                                <table class="table"> 
+                                    <thead> 
+                                        <tr> 
+                                            <th>Số thứ tự</th> 
+                                            <th>Mã đơn hàng</th>
+                                            <th>Ngày đặt hàng</th>
+                                            <th>Trạng thái</th>
+                                            <th>myXu sử dụng</th>
+                                            <th>myXu nhận được</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr> 
+                                            <td>1</td>
+                                            <td><a href="javascript:void" title="">#124584569632</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Giao hàng thành công</td>
+                                            <td>-2.056</td>
+                                            <td>+4.650</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>2</td>
+                                            <td><a href="javascript:void" title="">#124584569632</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Tặng myXu do promotion mua hàng Tặng myXu</td>
+                                            <td></td>
+                                            <td>+4.650</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>3</td>
+                                            <td><a href="javascript:void" title="">N/A</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Tặng myXu do promotion Tặng myXu tháng 8</td>
+                                            <td></td>
+                                            <td>+4.650</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>4</td>
+                                            <td><a href="javascript:void" title="">#879511445526</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Đã hủy</td>
+                                            <td>0</td>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>5</td>
+                                            <td><a href="javascript:void" title="">#897488997744</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Giao hàng thành công</td>
+                                            <td>0</td>
+                                            <td>+2.250</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>6</td>
+                                            <td><a href="javascript:void" title="">#897488997744</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Giao hàng thành công</td>
+                                            <td>0</td>
+                                            <td>+7.562</td>
+                                        </tr>
+                                        <tr> 
+                                            <td>7</td>
+                                            <td><a href="javascript:void" title="">#879511445526</a></td>
+                                            <td>20-01-2016 14:46:06</td>
+                                            <td>Đã hủy</td>
+                                            <td>0</td>
+                                            <td>+0</td>
+                                        </tr>
+                                             
+                                    </tbody> 
+                                </table>
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class=""><a href="#" aria-label="Previous"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                        <li class=""><a href="#">2 </a></li>
+                                        <li class=""><a href="#">3 </a></li>
+                                        <li class=""><a href="#" aria-label="next"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                                     </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!-- /end panel-list-->
+                    <div class="list-product list-product-caraousel">
+                        <h3>Sản phẩm hot mua bằng myXu</h4>
+                        <div class="carousel slide" id="pro-brand" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <ul class="thumbnails">
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml </h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <ul class="thumbnails">
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml </h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml </h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-2 col-sm-4 col-xs-6">
+                                            <a href="#">
+                                                <div class="img-carol"><img src="assets/images/upload/proimage.jpg" alt=""/></div>
+                                                <h4>Dầu Olive Milaganics Nguyên Chất 100Ml</h4>
+                                            </a> 
+                                            <div class="percent">-34%</div>
+                                            <div class="price">
+                                                <div class="price-sale">269.000<sup>đ</sup></div>
+                                                <div class="price-notsale">299.000<sup>đ</sup></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#pro-brand" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                            <a class="right carousel-control" href="#pro-brand" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,181 @@
+{% set current_page = 'cart-management' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="inner-breadcrumb">
+                <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <ul>
+                    <li class="cate1">
+                        <a class="showName" href="#">Máy tính & Laptop</a>
+                        <div class="scrollbar">
+                            <ul class="list-cate">
+                                <li><a href="#" title="">Thời trang nam</a></li>
+                                <li><a href="#" title="">Điện thoại và phụ kiện</a></li>
+                                <li><a href="#" title="">Thiết bị điện tử</a></li>
+                                <li><a href="#" title="">Máy tính & Laptop</a></li>
+                                <li><a href="#" title="">Máy ảnh - Máy quay phim</a></li>
+                                <li><a href="#" title="">Đồng hồ</a></li>
+                                <li><a href="#" title="">Giày dép nam</a></li>
+                                <li><a href="#" title="">Thiết bị gia dụng</a></li>
+                                <li><a href="#" title="">Thể thao & Du lịch</a></li>
+                                <li><a href="#" title="">Bách hóa online</a></li>
+                                <li><a href="#" title="">Thời trang nữ</a></li>
+                                <li><a href="#" title="">Mẹ & bé</a></li>
+                                <li><a href="#" title="">Nhà cửa & đời sống</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Máy tính</a></li>
+                    <li><a href="#">Nhat duy laptop</a></li>
+                    <li><a href="#">Acer ES1-567-323</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section my-acc">
+        <div class="section-inner">
+            <div class="container">
+                <div class="acc-header">
+                <h2><span class="f-name f-account">Tài khoản của bạn</span></h2>
+                <div class="acc-greeting">
+                    <h4>Chào, <strong>An</strong></h4>
+                    <h5>Tại đây bạn có thể theo dõi các hoạt động gần đây của tài khoản, cũng như quản lý, thay đổi thông tin tài khoản.</h5>
+                </div>
+                </div>
+                <ul class="acc-tab">
+                    <li><a class="active" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a href="account.html">Thông tin tài khoản</a></li>
+                    <li><a href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li class="clear"></li>
+                </ul>
+                <div class="acc-body">
+                    <div class="general-info">
+                        <h3 class="clr">
+                            Quản lý đơn hàng
+                            <div class="filter-more clr fr">
+                                <div class="sort-box">
+                                    <div class="sort">
+                                        Xem đơn hàng trong
+                                        <select>
+                                            <option value="">15 ngày qua</option>
+                                            <option value="">30 ngày gần đây</option>
+                                            <option value="">3 tháng gần đây</option>
+                                            <option value="">Đơn hàng năm 2014</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover cart-review">
+                                <tr>
+                                    <th class="order-id tc">Mã đơn hàng #</th>
+                                    <th class="order-item">Nội dung đặt hàng</th>
+                                    <th class="order-date tc">Ngày đặt</th>
+                                    <th class="order-to tc">Gửi đến</th>
+                                    <th class="order-sum tc">Tổng tiền</th>
+                                    <th class="order-status tc">Trạng thái</th>
+                                    <th class="order-review tc">Xem đơn hàng</th>
+                                </tr>
+                                <tr>
+                                    <td class="order-id tc">
+                                        <a href="06-03_my-account_order-details.html">011245236289</a>
+                                    </td>
+                                    <td class="order-item">
+                                       <ul class="order-item-list">
+                                           <li>Blackberry Q10 - 3.1 inch</li>
+                                           <li>Máy Hút Bụi Cầm Tay Đa Năng ILO 8209</li>
+                                       </ul>
+                                    </td>
+                                    <td class="order-date tc">
+                                       18/10/2014 - 08:56 
+                                    </td>
+                                    <td class="order-to tc">
+                                       Nguyễn Văn An
+                                    </td>
+                                    <td class="order-sum tc">
+                                       2.586.500 <sup>đ</sup>
+                                    </td>
+                                    <td class="order-status tc">Đang đóng gói</td>
+                                    <td class="order-review tc">
+                                       <a href="06-03_my-account_order-details.html">Xem đơn hàng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-id tc">
+                                        <a href="06-03_my-account_order-details.html">011245236289</a>
+                                    </td>
+                                    <td class="order-item">
+                                       <ul class="order-item-list">
+                                           <li>Blackberry Q10 - 3.1 inch</li>
+                                           <li>Máy Hút Bụi Cầm Tay Đa Năng ILO 8209</li>
+                                       </ul>
+                                    </td>
+                                    <td class="order-date tc">
+                                       18/10/2014 - 08:56 
+                                    </td>
+                                    <td class="order-to tc">
+                                       Nguyễn Văn An
+                                    </td>
+                                    <td class="order-sum tc">
+                                       2.586.500 <sup>đ</sup>
+                                    </td>
+                                    <td class="order-status tc">Đang giao</td>
+                                    <td class="order-review tc">
+                                       <a href="06-03_my-account_order-details.html">Xem đơn hàng</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-id tc">
+                                        <a href="06-03_my-account_order-details.html">011245236289</a>
+                                    </td>
+                                    <td class="order-item">
+                                       <ul class="order-item-list">
+                                           <li>Blackberry Q10 - 3.1 inch</li>
+                                           <li>Máy Hút Bụi Cầm Tay Đa Năng ILO 8209</li>
+                                       </ul>
+                                    </td>
+                                    <td class="order-date tc">
+                                       18/10/2014 - 08:56 
+                                    </td>
+                                    <td class="order-to tc">
+                                       Nguyễn Văn An
+                                    </td>
+                                    <td class="order-sum tc">
+                                       2.586.500 <sup>đ</sup>
+                                    </td>
+                                    <td class="order-status tc">Đã giao</td>
+                                    <td class="order-review tc">
+                                       <a href="06-03_my-account_order-details.html">Xem đơn hàng</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pa-footer pagination">
+                        <a href="#" class="prev"><i class="fa fa-angle-left"></i> Trang sau</a>
+                        <ul class="page">
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="goto">
+                                <span><input type="text" value="2"> / 23 trang</span>
+                                <span><a href="#" class="btn-goto-page"><i class="fa fa-angle-right"></i></a></span>
+                            </li>
+                        </ul>
+                        <a href="#" class="next">Kế tiếp <i class="fa fa-angle-right"></i></a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+</main>
+{% endblock %}

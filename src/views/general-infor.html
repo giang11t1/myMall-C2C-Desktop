@@ -1,0 +1,106 @@
+{% set current_page = 'general-infor' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="inner-breadcrumb">
+                <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <ul>
+                    <li class="cate1">
+                        <a class="showName" href="#">Máy tính & Laptop</a>
+                        <div class="scrollbar">
+                            <ul class="list-cate">
+                                <li><a href="#" title="">Thời trang nam</a></li>
+                                <li><a href="#" title="">Điện thoại và phụ kiện</a></li>
+                                <li><a href="#" title="">Thiết bị điện tử</a></li>
+                                <li><a href="#" title="">Máy tính & Laptop</a></li>
+                                <li><a href="#" title="">Máy ảnh - Máy quay phim</a></li>
+                                <li><a href="#" title="">Đồng hồ</a></li>
+                                <li><a href="#" title="">Giày dép nam</a></li>
+                                <li><a href="#" title="">Thiết bị gia dụng</a></li>
+                                <li><a href="#" title="">Thể thao & Du lịch</a></li>
+                                <li><a href="#" title="">Bách hóa online</a></li>
+                                <li><a href="#" title="">Thời trang nữ</a></li>
+                                <li><a href="#" title="">Mẹ & bé</a></li>
+                                <li><a href="#" title="">Nhà cửa & đời sống</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Máy tính</a></li>
+                    <li><a href="#">Nhat duy laptop</a></li>
+                    <li><a href="#">Acer ES1-567-323</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section my-acc">
+        <div class="section-inner">
+            <div class="container">
+                <div class="acc-header">
+                <h2><span class="f-name f-account">Tài khoản của bạn</span></h2>
+                <div class="acc-greeting">
+                    <h4>Chào, <strong>An</strong></h4>
+                    <h5>Tại đây bạn có thể theo dõi các hoạt động gần đây của tài khoản, cũng như quản lý, thay đổi thông tin tài khoản.</h5>
+                </div>
+                </div>
+                <ul class="acc-tab">
+                    <li><a class="active" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a href="account.html">Thông tin tài khoản</a></li>
+                    <li><a href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li class="clear"></li>
+                </ul>
+                <div class="acc-body">
+                    <div class="user-profile general-info">
+                        <h3>Thông tin chung</h3>
+                        <div class="u-row u-row-1 clr">
+                            <div class="col-md-2 u-title-item">Đơn hàng gần đây</div>
+                            <div class="col-md-4 u-content-item">
+                                <ul>
+                                    <li><a href="#">100700603609</a></li>
+                                    <li><a href="#">120700603609</a></li>
+                                    <li><a href="#">200700603609</a></li>
+                                </ul>
+                                <a class="more" href="#">Đơn hàng khác...</a>
+                            </div>
+                            <div class="col-md-2 u-title-item">MyXu của bạn</div>
+                            <div class="col-md-4 u-content-item">
+                                <p>MyXu hiện có: <span class="myxu-info">1,200</span></p>
+                                <p><a href="#" class="more">Quản lý MyXu &amp; tiền thưởng.</a></p>
+                            </div>
+                        </div>
+                        <div class="u-row u-row-2 clr">
+                            <div class="col-md-2 u-title-item">Thông tin giao hàng</div>
+                            <div class="col-md-4 u-content-item">
+                                <p class="name">Nguyễn Văn An</p>
+                                <p class="add">52 Trường Sơn, Tòa nhà ITL, P.2, Q.Tân Bình, TP.HCM</p>
+                                <a class="more" href="#">Thay đổi</a>
+                            </div>
+                            <div class="col-md-2 u-title-item">Đăng kí nhận bản tin & ưu đãi</div>
+                            <div class="col-md-4 u-content-item">
+                                <p>
+                                    <span><input type="radio" name="1"> Có</span>
+                                    <span><input type="radio" name="1"> Không</span>
+                                </p>
+                                <p><a href="#" class="more">Chi tiết</a></p>
+                            </div>
+                        </div>
+                        <div class="u-row u-row-3 clr">
+                            <div class="col-md-2 u-title-item">Thay đổi mật khẩu</div>
+                            <div class="col-md-4 u-content-item">
+                                <p>Hãy thay đổi mật khẩu thường xuyên để bảo mật thông tin của bạn.</p>
+                                <p><a href="#" class="more">Thay đổi</a></p>
+                            </div>
+                            <div class="col-md-2 u-title-item"></div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+</main>
+{% endblock %}
