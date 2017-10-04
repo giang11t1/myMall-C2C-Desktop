@@ -603,6 +603,10 @@ $(".MenuSlide .swiper-slide").click(function(){
     $(".MenuSlide .swiper-slide").removeClass("active");
     $(this).addClass("active");
 });
+$(".PriceLevel li").click(function(){
+    $(".PriceLevel li a").removeClass("active");
+    $(this).find("a").addClass("active");
+});
 // active pagination
 $(".wrap_pagination ul li a").click(function(){
     $(".wrap_pagination ul li a").removeClass("active");

@@ -380,7 +380,6 @@
 .breadcrumb {
     display: inline-block;
     width: 100%;
-    height: 30px;
     padding: 0;
     i.fa-home {
         float: left;
@@ -412,6 +411,9 @@
             float: left;
             font-size: 12px;
             margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
             a {
                 color: @text-color-3;
                 .transition(all 0.3s ease-in-out 0s);
@@ -756,14 +758,22 @@
                 }
                 .btn {
                     height: 32px;
-                    padding: 5px 16px;
+                    padding: 0;
                     border-radius: 0;
                     margin-right: 10px;
                     @media only screen and (max-width: @screen-lg-min) {
                         height: 31px;
-                        padding: 5px 14px;
                         font-size: 13px;
                         margin-right: 5px;
+                    }
+                    a {
+                        padding: 5px 16px;
+                        @media only screen and (max-width: @screen-lg-min) {
+                            padding: 5px 10px;
+                        }
+                         @media only screen and (max-width: 445px) {
+                            padding: 5px;
+                        }
                     }
                 }
                 p {
@@ -1155,6 +1165,7 @@ div.tab button.active {
                         }
                     }
                     &:last-child {
+                        margin-right: 0;
                         &:after {
                             content: none;
                         }
@@ -1258,6 +1269,11 @@ div.tab button.active {
                 float: left;
                 margin-right: 15px;
                 font-size: 14px;
+                a {
+                    &.active {
+                        color: @primary-color;
+                    }
+                }
             }
         }
         .price-wrap {
@@ -1500,7 +1516,7 @@ h2 .f-name {
 .f-best-brand {background-position: 0 -680px}
 .my-acc { background: #fff; padding-bottom: 90px;}
 .my-acc .acc-header {padding: 15px; border: 1px solid #e6e6e6; display: inline-block; width: 100%;}
-.my-acc .acc-tab    {margin: 30px 0 30px 50px;}
+.my-acc .acc-tab    {margin: 30px 0 30px 50px; padding-left: 0;}
 .my-acc .acc-body   {margin: 30px 0;}
 .acc-header h2, .acc-header .acc-greeting {float: left;} 
 .acc-header h2 {margin: 0; padding: 0; font-size: initial;}
@@ -1526,7 +1542,7 @@ ul.acc-tab li a:hover, ul.acc-tab li a.active {text-decoration: none; color: #2b
 ul.acc-tab li a.active {font-weight: bold; text-decoration: none;}
 ul.acc-tab li a:focus {text-decoration: none;}
 
-.general-info h3 {margin: 0; padding: 0 0 8px; font-size: 14px; font-weight: bold; color: #8e8e8e; text-transform: uppercase; border-bottom: 2px solid #ddd;}
+.general-info h3 {margin: 0; padding: 0 0 8px; font-size: 14px; font-weight: bold; color: #8e8e8e; text-transform: uppercase;}
 
 .general-info h3 span.status-name {display: block;float: right; text-transform: none; font-weight: normal;}
 .general-info h3 span.status-name strong {color: #ff9900}
@@ -1535,8 +1551,8 @@ ul.acc-tab li a:focus {text-decoration: none;}
 .general-info table {float: left; border-collapse: collapse; border: 1px solid #eee; font-size: 13px;}
 
 .user-profile {}
-.user-profile h3 {padding-bottom: 10px; margin: 0; border-bottom: 2px solid #ebebeb; font-size: 16px; font-weight: bold; text-transform: uppercase;}
-.user-profile .title-name {display: block; margin-top: 8px;}
+.user-profile h3 {padding-bottom: 16px; margin: 0; border-bottom: 2px solid #ebebeb; font-size: 16px; font-weight: bold; text-transform: uppercase; display: inline-block;width: 100%;}
+.user-profile .title-name {display: inline-block; margin-top: 8px;}
 .user-profile .title-name strong {color: #2bc5f8}
 
 .user-profile .u-row {
@@ -1586,6 +1602,44 @@ ul.buyed-product-sum span.total {font-size: 16px; color: #2bc5f8;}
 ul.buyed-product-sum span.total i {font-size: 12px; color: #8e8e8e; font-weight: normal;}
 .myxu-info-n {color: #ff9000; font-weight: bold; }
 
+.request-support-btn {
+    padding: 10px 40px 8px;
+    text-align: center;
+    background: #ff9000;
+    color: #fff;
+    border: 0 none;
+    font-size: 12px;
+    text-transform: normal;
+    border-radius: 3px;
+    float: right;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+    }
+}
+
+.cart-has-item ul li {padding: 5px 10px; display: block; float: left; }
+.cart-has-item ul li.name-title {width: 43%;}
+.cart-has-item ul li.unit-price {width: 13%;text-align: right;}
+.cart-has-item ul li.quanlity {width: 15%;text-align: center;}
+.cart-has-item ul li.discount {width: 13%;text-align: right;}
+.cart-has-item ul li.sub-total {width: 13%; text-align: right;}
+
+.cart-header {margin: 0 0 5px; border-bottom: 1px solid #e1e1e1; display: inline-block; width: 100%; padding-left: 0;}
+.cart-header li {font-weight: bold;}
+.cart-item {max-height: 220px; overflow: auto; width: 100%; display: inline-block;}
+.cart-item  ul {margin: 0; padding: 8px 0; border-bottom: 1px solid #ebebeb; display: inline-block; width: 100%;}
+
+.cart-item ul li.product-image {width: 90px; height: 90px; overflow: hidden; padding: 0; text-align: center;}
+.cart-item ul li.product-image img {margin: 0 auto; width: auto; max-height: 90px; vertical-align: middle;}
+.cart-item ul li.title {width: 36%;}
+.cart-item ul li.title a {display: block; font-weight: bold; color: #464646;}
+.cart-item ul li.title .attr-value {color: #6e6e6e}
+.cart-item ul li.quanlity input {display: block; margin: 0 auto 5px; border-radius: 3px; width: 60px; text-align: center;}
+.cart-item ul li.quanlity a.remove {display: block; color: #aaa; font-size: 11px; font-style: italic;text-decoration: underline; line-height: 13px;}
+.cart-item ul li .disabled {background: #f2f2f2; color:#ccc; cursor: not-allowed;}
+
 ol.newsletter-signin {list-style: none; padding-bottom: 15px; border-bottom: 1px dashed #ededed; display: inline-block; width: 100%;padding-left: 0;}
 ol.newsletter-signin li {width: 25%; display: block; float: left;}
 
@@ -1602,7 +1656,7 @@ ol.like-signin li .like-btn:hover {color: #fff; background: #ff9000; cursor: poi
 #request-support .modal-body h3 {margin: 0; padding: 0 0 15px; font-style: 16px; font-weight: bold;}
 #request-support .sending-support-go {padding-bottom: 30px;}
 
-.acc-info-change input[type="text"] {
+.acc-info-change input {
     width: 254px;
     border: 1px solid #ebebeb;
     padding: 5px;
@@ -1611,7 +1665,10 @@ ol.like-signin li .like-btn:hover {color: #fff; background: #ff9000; cursor: poi
 }
 .acc-info-change select {width: 82px;}
 
-.panel-info {border: 1px solid #ededed; margin: 0 auto 20px;width: 788px; border-radius: 3px;}
+.panel-info {border: 1px solid #ededed; margin: 0 auto 20px;width: 60%; border-radius: 3px;}
+.panel-info.newsletter-change {
+    width: 80%;
+}
 .panel-info h3 {margin: 0; background-color: #f6f6f6; color: #666; font-size: 14px; height: 50px; line-height: 50px; padding-left: 15px; font-weight: bold}
 .panel-info h3 i {color: #2bc5f8; font-size: 14px;}
 .panel-info .panel-info-body {background: #fff; padding: 30px 80px; display: inline-block; width: 100%;}
@@ -1673,7 +1730,7 @@ table.cart-review a{ color: #2bc5f8; }
 table.cart-review a:hover {color: #f99000; }
 table.cart-review tr:hover td {background: #fbfbfb}
 
-.general-info h3 {line-height: 30px;}
+.general-info h3 {line-height: 30px; display: inline-block; width: 100%;}
 .general-info h3 .filter-more {margin: 0; padding: 0; font-size: 13px; font-weight: normal; text-transform: none; float: right; }
 .general-info h3 .filter-more select {
     border: 1px solid #ebebeb;

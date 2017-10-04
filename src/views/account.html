@@ -7,29 +7,11 @@
             <div class="inner-breadcrumb">
                 <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <ul>
-                    <li class="cate1">
-                        <a class="showName" href="#">Máy tính & Laptop</a>
-                        <div class="scrollbar">
-                            <ul class="list-cate">
-                                <li><a href="#" title="">Thời trang nam</a></li>
-                                <li><a href="#" title="">Điện thoại và phụ kiện</a></li>
-                                <li><a href="#" title="">Thiết bị điện tử</a></li>
-                                <li><a href="#" title="">Máy tính & Laptop</a></li>
-                                <li><a href="#" title="">Máy ảnh - Máy quay phim</a></li>
-                                <li><a href="#" title="">Đồng hồ</a></li>
-                                <li><a href="#" title="">Giày dép nam</a></li>
-                                <li><a href="#" title="">Thiết bị gia dụng</a></li>
-                                <li><a href="#" title="">Thể thao & Du lịch</a></li>
-                                <li><a href="#" title="">Bách hóa online</a></li>
-                                <li><a href="#" title="">Thời trang nữ</a></li>
-                                <li><a href="#" title="">Mẹ & bé</a></li>
-                                <li><a href="#" title="">Nhà cửa & đời sống</a></li>
-                            </ul>
-                        </div>
+                    <li>
+                        <i>&nbsp</i>
                     </li>
-                    <li><a href="#">Máy tính</a></li>
-                    <li><a href="#">Nhat duy laptop</a></li>
-                    <li><a href="#">Acer ES1-567-323</a></li>
+                    <li><a href="#">Tài khoản</a></li>
+                    <li><a href="#">Thông tin chung</a></li>
                 </ul>
             </div>
         </div>
@@ -45,12 +27,12 @@
                 </div>
                 </div>
                 <ul class="acc-tab">
-                    <li><a class="active" href="general-infor.html">Thông tin chung</a></li>
-                    <li><a href="account.html">Thông tin tài khoản</a></li>
-                    <li><a href="cart-management.html">Quản lý đơn hàng</a></li>
-                    <li><a href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
-                    <li><a href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
-                    <li><a href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li><a class="{% if current_page == 'general-infor' %}active{% endif %}" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a class="{% if current_page == 'account' %}active{% endif %}" href="account.html">Thông tin tài khoản</a></li>
+                    <li><a class="{% if current_page == 'cart-management' %}active{% endif %}" href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a class="{% if current_page == 'myxu' %}active{% endif %}" href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a class="{% if current_page == 'register-receive' %}active{% endif %}" href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a class="{% if current_page == 'change-password' %}active{% endif %}" href="change-password.html">Thay đổi mật khẩu</a></li> 
                     <li class="clear"></li>
                 </ul>
                 <div class="acc-body">

@@ -1,0 +1,140 @@
+{% set current_page = 'detail-order' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="inner-breadcrumb">
+                <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <ul>
+                    <li>
+                        <i>&nbsp</i>
+                    </li>
+                    <li><a href="#">Tài khoản</a></li>
+                    <li><a href="#">Thông tin chung</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section my-acc">
+        <div class="section-inner">
+            <div class="container">
+                <div class="acc-header">
+                <h2><span class="f-name f-account">Tài khoản của bạn</span></h2>
+                <div class="acc-greeting">
+                    <h4>Chào, <strong>An</strong></h4>
+                    <h5>Tại đây bạn có thể theo dõi các hoạt động gần đây của tài khoản, cũng như quản lý, thay đổi thông tin tài khoản.</h5>
+                </div>
+                </div>
+                <ul class="acc-tab">
+                    <li><a class="{% if current_page == 'general-infor' %}active{% endif %}" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a class="{% if current_page == 'account' %}active{% endif %}" href="account.html">Thông tin tài khoản</a></li>
+                    <li><a class="{% if current_page == 'cart-management' or current_page == 'detail-order'%}active{% endif %}" href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a class="{% if current_page == 'myxu' %}active{% endif %}" href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a class="{% if current_page == 'register-receive' %}active{% endif %}" href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a class="{% if current_page == 'change-password' %}active{% endif %}" href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li class="clear"></li>
+                </ul>
+                <div class="acc-body">
+                    <div class="user-profile o-d-profile">
+                        <h3 class="clr">
+                            <span class="title-name fl">Chi tiết đơn hàng: <strong>#102102356356</strong></span>
+                            <a class="request-support-btn fr" href="#" data-toggle="modal" data-target="#request-support">Yêu cầu hổ trợ</a>
+                        </h3>
+                        <div class="u-row u-row-1 clr">
+                            <div class="col-md-2 u-title-item">Mã đơn hàng</div>
+                            <div class="col-md-4 u-content-item"><strong>#102102356356</strong></div>
+                            <div class="col-md-2 u-title-item">Ngày đặt hàng</div>
+                            <div class="col-md-4 u-content-item">18/10/2014 - 08:23</div>
+                        </div>
+                        <div class="u-row u-row-2 clr">
+                            <div class="col-md-2 u-title-item">Người nhận hàng</div>
+                            <div class="col-md-4 u-content-item">
+                                <p class="name">Nguyễn Văn An</p>
+                                <p class="add">52 Trường Sơn, Tòa nhà ITL, P.2, Q.Tân Bình, TP.HCM</p>
+                            </div>
+                            <div class="col-md-2 u-title-item">Thời gian giao hàng (dự kiến)</div>
+                            <div class="col-md-4 u-content-item">19/10/2014</div>
+                        </div>
+                        <div class="u-row u-row-3 clr">
+                            <div class="col-md-2 u-title-item">Phương thức thanh toán</div>
+                            <div class="col-md-4 u-content-item">Thanh toán bằng tiền mặt khi nhận hàng</div>
+                            <div class="col-md-2 u-title-item">Ghi chú cho đơn hàng</div>
+                            <div class="col-md-4 u-content-item">Vui lòng giao hàng vào giờ hành chính</div>
+                        </div>
+                        <div class="buyed-product">
+                            <div class="cart-has-item">
+                                <ul class="cart-header clr">
+                                    <li class="name-title">Sản phẩm mua</li>
+                                    <li class="unit-price">Giá</li>
+                                    <li class="quanlity">Số lượng</li>
+                                    <li class="discount">Giảm</li>
+                                    <li class="sub-total">Tổng</li>
+                                </ul>
+                                <div class="cart-item">
+                                    <ul class="clr">
+                                        <li class="product-image"><img alt="" src="assets/images/upload/canon_ixus.jpg"></li>
+                                        <li class="title">
+                                            <a href="#">Canon IXUS 145 - 16 Megapixel </a>
+                                            <span class="attr-value">Màu đen</span>
+                                        </li>
+                                        <li class="unit-price">2.990.000 <sup>đ</sup></li>
+                                        <li class="quanlity">1</li>
+                                        <li class="discount">0 <sup>đ</sup></li>
+                                        <li class="sub-total">2.990.000 <sup>đ</sup></li>
+                                    </ul>
+                                    <ul class="clr">
+                                        <li class="product-image"><img alt="" src="assets/images/upload/the-nho-adata.jpg"></li>
+                                        <li class="title">
+                                            <a href="#"><span class="ico ico-tag-sale-gift">Quà tặng</span>Thẻ Nhớ Adata SD 8GB Class 4</a>
+                                        </li>
+                                        <li class="unit-price">990.000 <sup>đ</sup></li>
+                                        <li class="quanlity">1</li>
+                                        <li class="discount">-990.000 <sup>đ</sup></li>
+                                        <li class="sub-total">0 <sup>đ</sup></li>
+                                    </ul>
+                                    <ul class="clr">
+                                        <li class="product-image"><img alt="" src="assets/images/upload/tai-nghe-bluetooth.png"></li>
+                                        <li class="title">
+                                            <a href="#">Tai Nghe Bluetooth Plantronics BB Go 2 </a>
+                                        </li>
+                                        <li class="unit-price">990.000 <sup>đ</sup></li>
+                                        <li class="quanlity">1</li>
+                                        <li class="discount">990.000 <sup>đ</sup></li>
+                                        <li class="sub-total">0 <sup>đ</sup></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <ul class="buyed-product-sum">
+                                <li class="temp">
+                                    <label>Thành tiền</label>
+                                    <span>2.350.000<sup>đ</sup></span>
+                                </li>
+                                <li>
+                                    <label>Giảm giá</label>
+                                    <span>-350.000<sup>đ</sup></span>
+                                </li>
+                                <li>
+                                    <label>MyXu được tặng</label>
+                                    <span>2.000</span>
+                                </li>
+                                <li>
+                                    <label>Phí vận chuyển</label>
+                                    <span class="highlight">50.000<sup>đ</sup></span>
+                                </li>
+                                <li class="sum">
+                                    <label>Tổng thanh toán</label>
+                                    <span class="total">
+                                        2.050.000<sup>đ</sup><br/>
+                                        <i>Đã bao gồm thuết VAT</i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+</main>
+{% endblock %}

@@ -127,7 +127,7 @@ header {
         }
         .cart-block {
             width: 67px;
-            padding-top: 20px;
+            padding-top: 0;
             @media only screen and (max-width: @screen-lg-min) { 
                 width: 40px;
             }
@@ -138,6 +138,8 @@ header {
                 display: block;
                 position: relative;
                 background: url(../images/icons/cart.png) no-repeat center right;
+                -webkit-transform: none; 
+                transform: none; 
             }
             .cart-number {
                 min-width: 18px;
@@ -300,17 +302,6 @@ header {
         width: auto;
         display: inline-block;
         margin: 0;
-        span {
-            &:before {
-                font: normal normal normal 14px/1 FontAwesome;
-                font-size: 18px;
-                position: absolute;
-                top: 1px;
-                left: 0;
-                content: "\f058";
-                color: @secondary-color;
-            }
-        }
         label {
             &:before {
                 content: none;
@@ -333,7 +324,10 @@ header {
             padding-left: 22px;
         } 
         input[type=radio], input[type=checkbox] {
-            visibility: hidden;
+            display: inline-block;
+            top: 1px;
+            z-index: 9;
+            height: 20px;
         }
     }  
     .lg-row-5 {
@@ -386,6 +380,8 @@ header {
     position: static;
     webkit-transform: none;
     transform: none;
+    display: inline-block;
+    width: 100%;
   }
 }
 .result-search {
