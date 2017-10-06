@@ -3313,7 +3313,6 @@ header .account-nav .nav li.account-block .dropdown-toggle {
   left: auto;
   right: 0;
   width: 280px;
-  height: 345px;
   padding: 17px 10px;
   border-top-right-radius: 3px !important;
   border-top-left-radius: 3px !important;
@@ -6765,8 +6764,52 @@ ol.like-signin li .like-btn:hover {
   height: 30px;
   vertical-align: middle;
 }
-.acc-info-change select {
-  width: 82px;
+.acc-info-change input.form-control {
+  height: 36px;
+  width: 100%;
+  padding: 7px 10px;
+  border-color: #ccc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  background: transparent;
+  z-index: 2;
+}
+.panel-info-body ul.personal-infor {
+  width: 90%;
+}
+.panel-info-body ul.personal-infor li.row {
+  margin-bottom: 12px;
+}
+.panel-info-body ul.personal-infor li.row .col-xs-6:first-child {
+  padding: 0;
+}
+.panel-info-body ul.personal-infor li.row .col-xs-6:last-child {
+  padding-right: 0;
+}
+.panel-info-body ul.personal-infor li.row .change-info-btn {
+  padding: 12px 50px;
+}
+.panel-info-body ul.personal-infor li.row label {
+  margin-bottom: 5px;
+}
+.panel-info-body ul.personal-infor li.row .datetime {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.panel-info-body ul.personal-infor li.row .datetime input {
+  cursor: default;
+}
+.panel-info-body ul.personal-infor li.row .datetime i {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 18px;
+  color: #818181;
+  z-index: 0;
+  cursor: pointer;
 }
 .panel-info {
   border: 1px solid #ededed;

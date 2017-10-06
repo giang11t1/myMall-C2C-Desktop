@@ -1,0 +1,116 @@
+{% set current_page = 'personal-information' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<main>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="inner-breadcrumb">
+                <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <ul>
+                    <li>
+                        <i>&nbsp</i>
+                    </li>
+                    <li><a href="#">Tài khoản</a></li>
+                    <li><a href="#">Thông tin chung</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section my-acc">
+        <div class="section-inner">
+            <div class="container">
+                <div class="acc-header">
+                <h2><span class="f-name f-account">Tài khoản của bạn</span></h2>
+                <div class="acc-greeting">
+                    <h4>Chào, <strong>An</strong></h4>
+                    <h5>Tại đây bạn có thể theo dõi các hoạt động gần đây của tài khoản, cũng như quản lý, thay đổi thông tin tài khoản.</h5>
+                </div>
+                </div>
+                <ul class="acc-tab">
+                    <li><a class="{% if current_page == 'general-infor' %}active{% endif %}" href="general-infor.html">Thông tin chung</a></li>
+                    <li><a class="{% if current_page == 'account' or current_page == 'personal-information' %}active{% endif %}" href="account.html">Thông tin tài khoản</a></li>
+                    <li><a class="{% if current_page == 'cart-management' %}active{% endif %}" href="cart-management.html">Quản lý đơn hàng</a></li>
+                    <li><a class="{% if current_page == 'myxu' %}active{% endif %}" href="myXu.html">Thông tin MyXu - tiền thưởng</a></li>
+                    <li><a class="{% if current_page == 'register-receive' %}active{% endif %}" href="register-receive.html">Đăng nhận bản tin - ưu đãi</a></li>
+                    <li><a class="{% if current_page == 'change-password' %}active{% endif %}" href="change-password.html">Thay đổi mật khẩu</a></li> 
+                    <li class="clear"></li>
+                </ul>
+                <div class="acc-body">
+                    <div class="panel-info acc-info-change">
+                        <h3><i class="fa fa-circle-o"></i> Thông tin cá nhân</h3>
+                        <div class="panel-info-body clr">
+                            <ul class="personal-infor">
+                                <li class="row">
+                                    <label>Họ và tên</label>
+                                    <span><input type="text" class="form-control" placeholder="Nhập họ tên"></span>
+                                </li>
+                                <li class="row">
+                                    <label>Email</label>
+                                    <span><input type="email" class="form-control" placeholder="Nhập địa chỉ email"></span>
+                                </li>
+                                <li class="row">
+                                    <label>Ngày sinh</label>
+                                    <span class="datetime">
+                                        <input class="form-control DatePicker" placeholder="Chọn ngày sinh">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <input type="hidden" id="dtp_input1" value="" />
+                                    </span>
+                                </li> 
+                                <li class="row">
+                                    <label for="">Tỉnh/ Thành phố</label>
+                                    <div class="wrap_select">
+                                        <select class="form-control">
+                                            <option>Chọn Tỉnh/ Thành phố</option>
+                                            <option>Hồ Chí Minh</option>
+                                            <option>Hà Nội</option>
+                                            <option>Nghệ An</option>
+                                            <option>Bình Dương</option>
+                                        </select>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </li>   
+                                <li class="row">
+                                    <div class="col-xs-6">
+                                        <label for="">Quận/ Huyện</label>
+                                        <div class="wrap_select">
+                                            <select class="form-control">
+                                                <option>Chọn Quận/ Huyện</option>
+                                                <option>Hồ Chí Minh</option>
+                                                <option>Hà Nội</option>
+                                                <option>Nghệ An</option>
+                                                <option>Bình Dương</option>
+                                            </select>
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label for="">Phường/ Xã</label>
+                                        <div class="wrap_select">
+                                            <select class="form-control">
+                                                <option>Chọn Phường/ Xã</option>
+                                                <option>Hồ Chí Minh</option>
+                                                <option>Hà Nội</option>
+                                                <option>Nghệ An</option>
+                                                <option>Bình Dương</option>
+                                            </select>
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="row">
+                                    <label>Địa chỉ</label>
+                                    <span><input type="text" class="form-control" placeholder="Nhập địa chỉ"></span>
+                                </li> 
+                                <li class="row text-center">
+                                    <button class="change-info-btn">Lưu thay đổi</button>
+                                </li>                         
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /end panel-list-->
+                </div>
+            </div>
+        </div>        
+    </section>
+</main>
+{% endblock %}

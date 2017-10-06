@@ -1663,8 +1663,57 @@ ol.like-signin li .like-btn:hover {color: #fff; background: #ff9000; cursor: poi
     height: 30px;
     vertical-align: middle;
 }
-.acc-info-change select {width: 82px;}
-
+.acc-info-change input.form-control {
+    height: 36px;
+    width: 100%;
+    padding: 7px 10px;
+    border-color: #ccc;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+} 
+.panel-info-body {
+    ul.personal-infor {
+        width: 90%;
+        li.row {
+            margin-bottom: 12px;
+            .col-xs-6 {
+                &:first-child {
+                    padding: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            .change-info-btn {
+                padding: 12px 50px;
+            }
+            label {
+                margin-bottom: 5px;
+            }
+            .datetime {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                input {
+                    cursor: default;
+                }
+                i {
+                    position: absolute;
+                    top: 8px;
+                    right: 15px;
+                    font-size: 18px;
+                    color: #818181;
+                    z-index: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }    
+}
 .panel-info {border: 1px solid #ededed; margin: 0 auto 20px;width: 60%; border-radius: 3px;}
 .panel-info.newsletter-change {
     width: 80%;

@@ -630,6 +630,8 @@ $('#resizing_select2').change(function(){
     interval: 4000
 });
 
+ // date picker
+$(".DatePicker").datepicker();
 // click show list link
 /*$(".block-list-link .title-block").click(function(){
     $(this).find(".fa-angle-down, .fa-angle-up").toggle();
